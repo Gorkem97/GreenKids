@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class cube_removal : MonoBehaviour
 {
+    public LevelCounter geri_sayim;
     public GameObject targetCube;
     public Vector3 target_cube_position;
     public Vector3 cube_start_position;
@@ -15,7 +16,7 @@ public class cube_removal : MonoBehaviour
     {
         mainCamera = Camera.main;
         cameraZdistance =
-            mainCamera.WorldToScreenPoint(transform.position).z;
+        mainCamera.WorldToScreenPoint(transform.position).z;
         target_cube_position = targetCube.transform.position;
         cube_start_position = transform.position;
         icinde_mi = false;
@@ -36,7 +37,7 @@ public class cube_removal : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag== "target_cube")
+        if (other.gameObject == targetCube)
         {
             icinde_mi = true;
         }
@@ -50,6 +51,7 @@ public class cube_removal : MonoBehaviour
         if (icinde_mi==true)
         {
             transform.position = target_cube_position;
+            geri_sayim.LevelCounting();
         }
         if (icinde_mi == false)
         {
