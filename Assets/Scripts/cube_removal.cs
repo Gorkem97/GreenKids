@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class cube_removal : MonoBehaviour
 {
+    public AudioSource kalm;
     public LevelCounter geri_sayim;
     public GameObject targetCube;
-    public Vector3 target_cube_position;
     public Vector3 cube_start_position;
     public bool icinde_mi;
     private Camera mainCamera;
@@ -17,9 +17,10 @@ public class cube_removal : MonoBehaviour
         mainCamera = Camera.main;
         cameraZdistance =
         mainCamera.WorldToScreenPoint(transform.position).z;
-        target_cube_position = targetCube.transform.position;
+
         cube_start_position = transform.position;
         icinde_mi = false;
+        
     }
 
     void Update()
@@ -37,9 +38,29 @@ public class cube_removal : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject == targetCube)
+        if (this.gameObject.tag == "kub1" && other.gameObject.tag == "yer1")
         {
             icinde_mi = true;
+            targetCube = other.gameObject;
+            
+        }
+        if (this.gameObject.tag == "kub2" && other.gameObject.tag == "yer2")
+        {
+            icinde_mi = true;
+            targetCube = other.gameObject;
+        }
+        if (this.gameObject.tag == "kub3" && other.gameObject.tag == "yer3")
+        {
+            icinde_mi = true;
+            targetCube = other.gameObject;
+        }
+        if (other.gameObject.tag =="targetwatcher")
+        {
+            geri_sayim = other.gameObject.GetComponent<LevelCounter>();
+        }
+        if (other.gameObject.tag == "WrongSound")
+        {
+            kalm = other.gameObject.GetComponent<AudioSource>();
         }
     }
     private void OnTriggerExit(Collider other)
@@ -50,13 +71,25 @@ public class cube_removal : MonoBehaviour
     {
         if (icinde_mi==true)
         {
-            transform.position = target_cube_position;
+            transform.position = targetCube.transform.position;
             geri_sayim.LevelCounting();
+            kalm.Play();
         }
         if (icinde_mi == false)
         {
             transform.position = cube_start_position;
+            kalm.Play();
         }
+
+    }
+    IEnumerator secondWait()
+    {
+        yield return new WaitForSeconds(0.01f);
+
+
+    }
+    public void DisplayMyTarget()
+    {
 
     }
 
