@@ -7,19 +7,67 @@ public class SpawnManagement : MonoBehaviour
     public GameObject[] sayilar = new GameObject[3];
     public GameObject[] yuvalar = new GameObject[3];
     public Vector3 Start_point = new Vector3(-5, 4, -5);
-    public Vector3 yuva_start_point = new Vector3(-5, -8, -5);
+    public Vector3 yuva_start_point = new Vector3(-5, -8, -4);
     public int kacsayi = 3;
     public float yol;
     // Start is called before the first frame update
     void Start()
     {
-
-        Instantiate(yuvalar[0], yuva_start_point, transform.rotation);
-        yuva_start_point.x += yol;
-        Instantiate(yuvalar[1], yuva_start_point, transform.rotation);
-        yuva_start_point.x += yol;
-        Instantiate(yuvalar[2], yuva_start_point, transform.rotation);
-        yuva_start_point.x += yol;
+        int b = Random.Range(0, 5);
+        if (b == 0)
+        {
+            Instantiate(yuvalar[0], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+            Instantiate(yuvalar[1], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+            Instantiate(yuvalar[2], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+        }
+        if (b == 1)
+        {
+            Instantiate(yuvalar[0], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+            Instantiate(yuvalar[2], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+            Instantiate(yuvalar[1], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+        }
+        if (b == 2)
+        {
+            Instantiate(yuvalar[1], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+            Instantiate(yuvalar[0], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+            Instantiate(yuvalar[2], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+        }
+        if (b == 3)
+        {
+            Instantiate(yuvalar[1], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+            Instantiate(yuvalar[2], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+            Instantiate(yuvalar[0], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+        }
+        if (b == 4)
+        {
+            Instantiate(yuvalar[2], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+            Instantiate(yuvalar[1], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+            Instantiate(yuvalar[0], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+        }
+        if (b == 5)
+        {
+            Instantiate(yuvalar[2], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+            Instantiate(yuvalar[0], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+            Instantiate(yuvalar[1], yuva_start_point, transform.rotation);
+            yuva_start_point.x += yol;
+        }
         int a = Random.Range(0, 5);
             if (a==0)
             {
