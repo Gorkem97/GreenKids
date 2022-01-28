@@ -12,6 +12,7 @@ TagManager:
   - yer2
   - yer3
   - targetwatcher
+  - WrongSound
   layers:
   - Default
   - TransparentFX

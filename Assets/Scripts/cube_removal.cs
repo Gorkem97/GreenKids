@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class cube_removal : MonoBehaviour
 {
+    public AudioSource kalm;
     public LevelCounter geri_sayim;
     public GameObject targetCube;
     public Vector3 cube_start_position;
@@ -41,6 +42,7 @@ public class cube_removal : MonoBehaviour
         {
             icinde_mi = true;
             targetCube = other.gameObject;
+            
         }
         if (this.gameObject.tag == "kub2" && other.gameObject.tag == "yer2")
         {
@@ -56,6 +58,10 @@ public class cube_removal : MonoBehaviour
         {
             geri_sayim = other.gameObject.GetComponent<LevelCounter>();
         }
+        if (other.gameObject.tag == "WrongSound")
+        {
+            kalm = other.gameObject.GetComponent<AudioSource>();
+        }
     }
     private void OnTriggerExit(Collider other)
     {
@@ -67,10 +73,12 @@ public class cube_removal : MonoBehaviour
         {
             transform.position = targetCube.transform.position;
             geri_sayim.LevelCounting();
+            kalm.Play();
         }
         if (icinde_mi == false)
         {
             transform.position = cube_start_position;
+            kalm.Play();
         }
 
     }

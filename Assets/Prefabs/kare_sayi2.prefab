@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b206663d25d409843918e152e11271f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kalm: {fileID: 3554345646480727264, guid: f6cbe69d813d4554c91dc2c00063ed1b, type: 3}
   geri_sayim: {fileID: 6883605712774944566, guid: 89c92d61251303b4ab56caf2f49e383f, type: 3}
   targetCube: {fileID: 8347162865097412508, guid: 2c03e48f207844147a815f5e64cc6754, type: 3}
   cube_start_position: {x: 0, y: 0, z: 0}
