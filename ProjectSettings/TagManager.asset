@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - target_cube
+  - kub1
+  - kub2
+  - kub3
+  - yer1
+  - yer2
+  - yer3
+  - targetwatcher
   layers:
   - Default
   - TransparentFX
