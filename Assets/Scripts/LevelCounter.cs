@@ -8,9 +8,9 @@ public class LevelCounter : MonoBehaviour
     public AudioSource kilik;
     public AudioSource kalm;
     public GameObject ReplayButton;
-    public GameObject sphere;
-    public float HowMuchPuzzle = 6;
+    public float HowMuchPuzzle;
     public AudioSource finish_sound;
+    public int thisScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +31,6 @@ public class LevelCounter : MonoBehaviour
         }
         if (HowMuchPuzzle <= 0)
         {
-            sphere.SetActive(true);
             ReplayButton.SetActive(true);
             finish_sound.Play();
         }
@@ -44,6 +43,6 @@ public class LevelCounter : MonoBehaviour
     {
 
         yield return new WaitForSeconds(0.1f); 
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(thisScene);
     }
 }
