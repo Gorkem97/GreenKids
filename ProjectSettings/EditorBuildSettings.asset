@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: bbe607efee157e0408c11f4c7f7e0248
   - enabled: 1
-    path: Assets/Scenes/MatchingGame.unity
+    path: Assets/Scenes/Matching/Match3.unity
     guid: 389fce543799e784697f1aa386402ddd
   - enabled: 1
-    path: Assets/Scenes/Matching2.unity
-    guid: 32d019943d981e94bb1c0f46c54ea57d
+    path: Assets/Scenes/Matching/Match4.unity
+    guid: c4129f51896270e418267516c8942f17
+  - enabled: 1
+    path: Assets/Scenes/Matching/Match5.unity
+    guid: 3d35125d1446e204fa0a4f7daccbe17e
+  - enabled: 1
+    path: Assets/Scenes/Matching/Match7.unity
+    guid: 5093d5d95ae5f0b478eddf7a3bbc32cb
   m_configObjects: {}

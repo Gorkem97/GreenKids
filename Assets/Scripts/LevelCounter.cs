@@ -7,14 +7,16 @@ public class LevelCounter : MonoBehaviour
 {
     public AudioSource kilik;
     public AudioSource kalm;
-    public GameObject ReplayButton;
+    public GameObject Congrats;
+    public GameObject toMainMenu;
     public float HowMuchPuzzle;
     public AudioSource finish_sound;
-    public int thisScene;
+    public int NextScene;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Congrats.SetActive(false);
+        toMainMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -31,18 +33,19 @@ public class LevelCounter : MonoBehaviour
         }
         if (HowMuchPuzzle <= 0)
         {
-            ReplayButton.SetActive(true);
+            Congrats.SetActive(true);
+            toMainMenu.SetActive(true);
+            StartCoroutine(wait());
             finish_sound.Play();
         }
     }
     public void LevelEnder()
     {
-        StartCoroutine(wait());
+        SceneManager.LoadScene(NextScene);
     }
     IEnumerator wait()
     {
-
-        yield return new WaitForSeconds(0.1f); 
-        SceneManager.LoadScene(thisScene);
+        yield return new WaitForSeconds(3); 
+        SceneManager.LoadScene(NextScene);
     }
 }

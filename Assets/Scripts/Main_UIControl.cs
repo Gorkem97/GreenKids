@@ -33,8 +33,16 @@ public class Main_UIControl : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
-    public void AltiliSecme()
+    public void DortluEsleme()
     {
         SceneManager.LoadScene(2);
+    }
+    public void BesliEsleme()
+    {
+        SceneManager.LoadScene(3);
+    }
+    public void AltiliSecme()
+    {
+        SceneManager.LoadScene(4);
     }
 }

@@ -14,8 +14,6 @@ public class SpawnManagement : MonoBehaviour
     public int yuva_ilk_sutun;
     public int yuva_ikinci_sutun;
     private int yuva_sutunbasi1;
-
-
     public float yol;
     void Start()
     {
@@ -54,6 +52,14 @@ public class SpawnManagement : MonoBehaviour
             {
                 Start_point1.x -= ilk_sutun * yol;
                 Start_point1.y -= yol;
+                if (ikinci_sutun ==1)
+                {
+                    Start_point1.x += yol;
+                }
+                if (ikinci_sutun ==2)
+                {
+                    Start_point1.x += yol / 2;
+                }
             }
             int a = Random.Range(0, sutunbasi1);
             Instantiate(dragspawn[a], Start_point1, transform.rotation);
@@ -67,6 +73,14 @@ public class SpawnManagement : MonoBehaviour
             {
                 yuva_start_point1.x -= ilk_sutun * yol;
                 yuva_start_point1.y -= yol;
+                if (yuva_ikinci_sutun == 1)
+                {
+                    yuva_start_point1.x += yol;
+                }
+                if (yuva_ikinci_sutun == 2)
+                {
+                    yuva_start_point1.x += yol / 2;
+                }
             }
             int b = Random.Range(0, yuva_sutunbasi1);
             Instantiate(yuvaspawn[b], yuva_start_point1, transform.rotation);
