@@ -71,5 +71,12 @@ PrefabInstance:
       propertyPath: m_TagString
       value: yer6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7562468751678267726, guid: b10b870ede4ab89409af75e1f159d966, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3316672676145260620, guid: b10b870ede4ab89409af75e1f159d966, type: 3}
+    - {fileID: 8569743148835956875, guid: b10b870ede4ab89409af75e1f159d966, type: 3}
+    - {fileID: 5592015811564860163, guid: b10b870ede4ab89409af75e1f159d966, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b10b870ede4ab89409af75e1f159d966, type: 3}

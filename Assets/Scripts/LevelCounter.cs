@@ -43,7 +43,6 @@ public class LevelCounter : MonoBehaviour
     IEnumerator wait()
     {
 
-        kilik.Play();
         yield return new WaitForSeconds(0.1f); 
         SceneManager.LoadScene(0);
     }

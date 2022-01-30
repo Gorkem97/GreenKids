@@ -11,8 +11,10 @@ public class cube_removal : MonoBehaviour
     public GameObject targetCube;
     public Vector3 cube_start_position;
     public bool icinde_mi;
+
     private Camera mainCamera;
     private float cameraZdistance;
+
     Vector3 scaleChange = new Vector3(1.5f, 1.5f, 1.5f);
     bool isbig = false;
     // Start is called before the first frame update
@@ -117,6 +119,7 @@ public class cube_removal : MonoBehaviour
             transform.position = Attaching;
             geri_sayim.LevelCounting();
             kalm.Play();
+            DestroyImmediate(this.gameObject.GetComponent<Collider>());
         }
         if (icinde_mi == false)
         {

@@ -6,10 +6,10 @@ public class SpawnManagement : MonoBehaviour
 {
     public GameObject[] sayilar = new GameObject[6];
     public GameObject[] yuvalar = new GameObject[6];
-    public Vector3 Start_point1 = new Vector3(-5, 8, -5);
-    public Vector3 Start_point2 = new Vector3(-5, 2, -5);
-    public Vector3 yuva_start_point1 = new Vector3(-5, -8, -4);
-    public Vector3 yuva_start_point2 = new Vector3(-5, -15, -4);
+    public Vector3 Start_point1 = new Vector3(-5, 10, -5);
+    public Vector3 Start_point2 = new Vector3(-5, 5, -5);
+    public Vector3 yuva_start_point1 = new Vector3(-5, -5, -4);
+    public Vector3 yuva_start_point2 = new Vector3(-5, -10, -4);
     public int ilk_sutun = 3;
     public int ikinci_sutun = 3;
     private int sutunbasi1 = 3;
