@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class LevelCounter : MonoBehaviour
 {
+    public AudioSource kilik;
     public AudioSource kalm;
     public GameObject ReplayButton;
     public GameObject sphere;
-    public float HowMuchPuzzle = 3;
+    public float HowMuchPuzzle = 6;
     public AudioSource finish_sound;
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,13 @@ public class LevelCounter : MonoBehaviour
     }
     public void LevelEnder()
     {
+        StartCoroutine(wait());
+    }
+    IEnumerator wait()
+    {
+
+        kilik.Play();
+        yield return new WaitForSeconds(0.1f); 
         SceneManager.LoadScene(0);
     }
 }

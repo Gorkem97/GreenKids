@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class cube_removal : MonoBehaviour
 {
+    public AudioSource klick;
+    bool isklick = false;
     public AudioSource kalm;
     public LevelCounter geri_sayim;
     public GameObject targetCube;
@@ -11,6 +13,8 @@ public class cube_removal : MonoBehaviour
     public bool icinde_mi;
     private Camera mainCamera;
     private float cameraZdistance;
+    Vector3 scaleChange = new Vector3(1.5f, 1.5f, 1.5f);
+    bool isbig = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,11 +34,24 @@ public class cube_removal : MonoBehaviour
     
     private void OnMouseDrag()
     {
+
         Vector3 ScreenPosition =
-            new Vector3(Input.mousePosition.x,Input.mousePosition.y,cameraZdistance);
+            new Vector3(Input.mousePosition.x,Input.mousePosition.y,cameraZdistance-1);
         Vector3 WorldPosition =
             mainCamera.ScreenToWorldPoint(ScreenPosition);
         transform.position = WorldPosition;
+
+
+        if (isbig == false)
+        {
+            this.gameObject.transform.localScale += scaleChange;
+            isbig = true;
+        }
+        if (isklick == false)
+        {
+            klick.Play();
+            isklick = true;
+        }
     }
     private void OnTriggerStay(Collider other)
     {
@@ -54,6 +71,22 @@ public class cube_removal : MonoBehaviour
             icinde_mi = true;
             targetCube = other.gameObject;
         }
+        if (this.gameObject.tag == "kub4" && other.gameObject.tag == "yer4")
+        {
+            icinde_mi = true;
+            targetCube = other.gameObject;
+
+        }
+        if (this.gameObject.tag == "kub5" && other.gameObject.tag == "yer5")
+        {
+            icinde_mi = true;
+            targetCube = other.gameObject;
+        }
+        if (this.gameObject.tag == "kub6" && other.gameObject.tag == "yer6")
+        {
+            icinde_mi = true;
+            targetCube = other.gameObject;
+        }
         if (other.gameObject.tag =="targetwatcher")
         {
             geri_sayim = other.gameObject.GetComponent<LevelCounter>();
@@ -62,6 +95,10 @@ public class cube_removal : MonoBehaviour
         {
             kalm = other.gameObject.GetComponent<AudioSource>();
         }
+        if (other.gameObject.tag == "klik")
+        {
+            klick = other.gameObject.GetComponent<AudioSource>();
+        }
     }
     private void OnTriggerExit(Collider other)
     {
@@ -69,9 +106,15 @@ public class cube_removal : MonoBehaviour
     }
     private void OnMouseUp()
     {
-        if (icinde_mi==true)
+        isklick = false;
+        this.gameObject.transform.localScale -= scaleChange;
+        isbig = false;
+
+        if (icinde_mi == true)
         {
-            transform.position = targetCube.transform.position;
+            Vector3 Attaching = targetCube.transform.position;
+            Attaching.z -= 1;
+            transform.position = Attaching;
             geri_sayim.LevelCounting();
             kalm.Play();
         }
@@ -80,17 +123,5 @@ public class cube_removal : MonoBehaviour
             transform.position = cube_start_position;
             kalm.Play();
         }
-
     }
-    IEnumerator secondWait()
-    {
-        yield return new WaitForSeconds(0.01f);
-
-
-    }
-    public void DisplayMyTarget()
-    {
-
-    }
-
 }
