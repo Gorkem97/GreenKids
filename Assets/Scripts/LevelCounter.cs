@@ -35,7 +35,10 @@ public class LevelCounter : MonoBehaviour
         {
             Congrats.SetActive(true);
             toMainMenu.SetActive(true);
-            StartCoroutine(wait());
+            if (NextScene !=0)
+            {
+                StartCoroutine(wait());
+            }
             finish_sound.Play();
         }
     }

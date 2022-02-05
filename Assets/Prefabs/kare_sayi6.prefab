@@ -37,6 +37,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: kub6
       objectReference: {fileID: 0}
+    - target: {fileID: 4822550916561188070, guid: 602af13e20e8e72489d37fb83e1dc0d6, type: 3}
+      propertyPath: m_Size.x
+      value: 0.577782
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822550916561188070, guid: 602af13e20e8e72489d37fb83e1dc0d6, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6272481
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822550916561188070, guid: 602af13e20e8e72489d37fb83e1dc0d6, type: 3}
+      propertyPath: m_Center.x
+      value: -0.007417864
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822550916561188070, guid: 602af13e20e8e72489d37fb83e1dc0d6, type: 3}
+      propertyPath: m_Center.y
+      value: 0.032437842
+      objectReference: {fileID: 0}
     - target: {fileID: 4822550916561188073, guid: 602af13e20e8e72489d37fb83e1dc0d6, type: 3}
       propertyPath: m_RootOrder
       value: 0

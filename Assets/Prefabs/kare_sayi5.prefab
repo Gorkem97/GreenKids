@@ -62,8 +62,24 @@ PrefabInstance:
       value: kub5
       objectReference: {fileID: 0}
     - target: {fileID: 8203321040419643815, guid: 8460665222b850c438db9315daead913, type: 3}
+      propertyPath: m_Size.x
+      value: 1.2812604
+      objectReference: {fileID: 0}
+    - target: {fileID: 8203321040419643815, guid: 8460665222b850c438db9315daead913, type: 3}
+      propertyPath: m_Size.y
+      value: 1.3530979
+      objectReference: {fileID: 0}
+    - target: {fileID: 8203321040419643815, guid: 8460665222b850c438db9315daead913, type: 3}
       propertyPath: m_Size.z
       value: 2.952818
+      objectReference: {fileID: 0}
+    - target: {fileID: 8203321040419643815, guid: 8460665222b850c438db9315daead913, type: 3}
+      propertyPath: m_Center.x
+      value: -0.02431149
+      objectReference: {fileID: 0}
+    - target: {fileID: 8203321040419643815, guid: 8460665222b850c438db9315daead913, type: 3}
+      propertyPath: m_Center.y
+      value: -0.018378152
       objectReference: {fileID: 0}
     - target: {fileID: 8203321040419643815, guid: 8460665222b850c438db9315daead913, type: 3}
       propertyPath: m_Center.z

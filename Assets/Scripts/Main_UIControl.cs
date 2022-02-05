@@ -45,4 +45,8 @@ public class Main_UIControl : MonoBehaviour
     {
         SceneManager.LoadScene(4);
     }
+    public void Siralama()
+    {
+        SceneManager.LoadScene(5);
+    }
 }

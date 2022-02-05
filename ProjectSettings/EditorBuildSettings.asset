@@ -20,4 +20,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Matching/Match7.unity
     guid: 5093d5d95ae5f0b478eddf7a3bbc32cb
+  - enabled: 1
+    path: Assets/Scenes/Siralama/Siralama3.unity
+    guid: d502e6f0195538a4ba1ad59f2ed621cb
+  - enabled: 1
+    path: Assets/Scenes/Siralama/Siralama4.unity
+    guid: d69596c5a96b18641a188af97b12a97c
+  - enabled: 1
+    path: Assets/Scenes/Siralama/Siralama5.unity
+    guid: 882a969f4e61bde448485e6ffb491e1d
+  - enabled: 1
+    path: Assets/Scenes/Siralama/Siralama6.unity
+    guid: 63c84e488ae81c441bc9e593f6a0b2e2
   m_configObjects: {}
