@@ -11,6 +11,7 @@ public class cube_removal : MonoBehaviour
     public GameObject targetCube;
     public Vector3 cube_start_position;
     public bool icinde_mi;
+    public int minigame=1;
 
     private Camera mainCamera;
     private float cameraZdistance;
@@ -101,6 +102,10 @@ public class cube_removal : MonoBehaviour
         {
             klick = other.gameObject.GetComponent<AudioSource>();
         }
+        if (other.gameObject.tag == "tarim")
+        {
+            minigame = 2;
+        }
     }
     private void OnTriggerExit(Collider other)
     {
@@ -114,9 +119,16 @@ public class cube_removal : MonoBehaviour
 
         if (icinde_mi == true)
         {
-            Vector3 Attaching = targetCube.transform.position;
-            Attaching.z -= 1;
-            transform.position = Attaching;
+            if (minigame == 1)
+            {
+                Vector3 Attaching = targetCube.transform.position;
+                Attaching.z -= 1;
+                transform.position = Attaching;
+            }
+            if (minigame == 2)
+            {
+                Destroy(this.gameObject);
+            }
             geri_sayim.LevelCounting();
             kalm.Play();
             DestroyImmediate(this.gameObject.GetComponent<Collider>());

@@ -6,47 +6,31 @@ using UnityEngine.SceneManagement;
 public class Main_UIControl : MonoBehaviour
 {
     public GameObject MainTab;
-    public GameObject EsleSecenek;
-    // Start is called before the first frame update
+    public GameObject MiniTab;
     void Start()
     {
-        MainTab.SetActive(true);
-        EsleSecenek.SetActive(false);
+        CloseTab();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void EslestirmePenceresi()
-    {
-        MainTab.SetActive(false);
-        EsleSecenek.SetActive(true);
-    }
-    public void EsledenDon()
-    {
-        MainTab.SetActive(true);
-        EsleSecenek.SetActive(false);
-    }
-    public void UcluEsleme()
+    public void Eslesme()
     {
         SceneManager.LoadScene(1);
-    }
-    public void DortluEsleme()
-    {
-        SceneManager.LoadScene(2);
-    }
-    public void BesliEsleme()
-    {
-        SceneManager.LoadScene(3);
-    }
-    public void AltiliSecme()
-    {
-        SceneManager.LoadScene(4);
     }
     public void Siralama()
     {
         SceneManager.LoadScene(5);
+    }
+    public void MiniGame()
+    {
+        MiniTab.SetActive(true);
+        MainTab.SetActive(false);
+    }
+    public void CloseTab()
+    {
+        MainTab.SetActive(true);
+        MiniTab.SetActive(false);
+    }
+    public void ElmaTopla()
+    {
+        SceneManager.LoadScene(9);
     }
 }

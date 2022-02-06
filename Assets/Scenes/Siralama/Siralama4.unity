@@ -561,6 +561,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 409b2ea8bafa98e4ea0b5b1a3a7bc19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eslesmemi: 1
+  meyvemi: 0
+  MeyveSpawnpoints:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   sayilar:
   - {fileID: 7268904930732811358, guid: b99f9f28ef776984ba43e2ecea714765, type: 3}
   - {fileID: 581840679306046079, guid: 973b892494916d54cad316760160f551, type: 3}

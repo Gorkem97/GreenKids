@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class SpawnManagement : MonoBehaviour
 {
+    public bool eslesmemi;
+    public bool meyvemi;
+    public Vector3[] MeyveSpawnpoints = new Vector3[6];
+    int meyveSayi = 5;
     public GameObject[] sayilar = new GameObject[6];
     public GameObject[] yuvalar = new GameObject[6];
     public Vector3 Start_point1 = new Vector3(-5, 10, -5);
@@ -17,11 +21,36 @@ public class SpawnManagement : MonoBehaviour
     public float yol;
     void Start()
     {
-        EslesmeSpawner();
+        if (eslesmemi == true)
+        {
+            EslesmeSpawner();
+        }
+        if (meyvemi == true)
+        {
+            meyvespawner();
+        }
     }
-
-    void Update()
+    public void meyvespawner()
     {
+        for (int i = 0; i < 6; i++)
+        {
+            int a = Random.Range(0, 3);
+            if (a == 0)
+            {
+                Instantiate(sayilar[0], MeyveSpawnpoints[meyveSayi],transform.rotation);
+                meyveSayi -= 1;
+            }
+            if (a == 1)
+            {
+                Instantiate(sayilar[1], MeyveSpawnpoints[meyveSayi], transform.rotation);
+                meyveSayi -= 1;
+            }
+            if (a == 2)
+            {
+                Instantiate(sayilar[2], MeyveSpawnpoints[meyveSayi], transform.rotation);
+                meyveSayi -= 1;
+            }
+        }
     }
     public void EslesmeSpawner()
     {
