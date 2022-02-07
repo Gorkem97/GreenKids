@@ -33,4 +33,8 @@ public class Main_UIControl : MonoBehaviour
     {
         SceneManager.LoadScene(9);
     }
+    public void Sula()
+    {
+        SceneManager.LoadScene(10);
+    }
 }

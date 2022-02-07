@@ -12,9 +12,12 @@ public class cube_removal : MonoBehaviour
     public Vector3 cube_start_position;
     public bool icinde_mi;
     public int minigame=1;
+    public Vector3 SulamaRotate;
+    bool dondu_mu=false;
 
     private Camera mainCamera;
     private float cameraZdistance;
+    public Transform su;
 
     Vector3 scaleChange = new Vector3(1.5f, 1.5f, 0);
     bool isbig = false;
@@ -27,7 +30,7 @@ public class cube_removal : MonoBehaviour
 
         cube_start_position = transform.position;
         icinde_mi = false;
-        
+        su.GetComponent<ParticleSystem>().enableEmission = false;
     }
 
     void Update()
@@ -37,15 +40,32 @@ public class cube_removal : MonoBehaviour
     
     private void OnMouseDrag()
     {
+        if (this.gameObject.tag != "sulama")
+        {
+            Vector3 ScreenPosition =
+                new Vector3(Input.mousePosition.x, Input.mousePosition.y, cameraZdistance - 1);
+            Vector3 WorldPosition =
+                mainCamera.ScreenToWorldPoint(ScreenPosition);
+            transform.position = WorldPosition;
+        }
+        if (this.gameObject.tag == "sulama")
+        {
+            Vector3 ScreenPosition =
+                new Vector3(Input.mousePosition.x, Input.mousePosition.y, cameraZdistance - 1);
+            Vector3 WorldPosition =
+                mainCamera.ScreenToWorldPoint(ScreenPosition);
+            WorldPosition.y = 10;
+            transform.position = WorldPosition;
+            su.GetComponent<ParticleSystem>().enableEmission = true;
+            if (dondu_mu == false)
+            {
+                transform.Rotate(0, 0, 50);
+                dondu_mu = true;
+            }
+        }
 
-        Vector3 ScreenPosition =
-            new Vector3(Input.mousePosition.x,Input.mousePosition.y,cameraZdistance-1);
-        Vector3 WorldPosition =
-            mainCamera.ScreenToWorldPoint(ScreenPosition);
-        transform.position = WorldPosition;
 
-
-        if (isbig == false)
+        if (isbig == false && this.gameObject.tag != "sulama")
         {
             this.gameObject.transform.localScale += scaleChange;
             isbig = true;
@@ -114,8 +134,12 @@ public class cube_removal : MonoBehaviour
     private void OnMouseUp()
     {
         isklick = false;
-        this.gameObject.transform.localScale -= scaleChange;
-        isbig = false;
+        if (this.gameObject.tag != "sulama")
+        {
+            this.gameObject.transform.localScale -= scaleChange;
+            isbig = false;
+
+        }
 
         if (icinde_mi == true)
         {
@@ -135,8 +159,17 @@ public class cube_removal : MonoBehaviour
         }
         if (icinde_mi == false)
         {
-            transform.position = cube_start_position;
-            kalm.Play();
+            if (this.gameObject.tag != "sulama")
+            {
+                transform.position = cube_start_position;
+                kalm.Play();
+            }
+            if (this.gameObject.tag == "sulama")
+            {
+                su.GetComponent<ParticleSystem>().enableEmission = false;
+                transform.Rotate(0, 0, -50);
+                dondu_mu = false;
+            }
         }
     }
 }

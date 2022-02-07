@@ -21,6 +21,7 @@ TagManager:
   - yer6
   - klik
   - tarim
+  - sulama
   layers:
   - Default
   - TransparentFX
