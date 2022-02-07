@@ -6596,23 +6596,23 @@ PrefabInstance:
       objectReference: {fileID: 1151963621}
     - target: {fileID: 8384242337664510546, guid: ce687fdb0ecbbd74f8103bb5bc149ad2, type: 3}
       propertyPath: m_Size.x
-      value: 6.5221066
+      value: 9.31391
       objectReference: {fileID: 0}
     - target: {fileID: 8384242337664510546, guid: ce687fdb0ecbbd74f8103bb5bc149ad2, type: 3}
       propertyPath: m_Size.y
-      value: 5.9972906
+      value: 8.108265
       objectReference: {fileID: 0}
     - target: {fileID: 8384242337664510546, guid: ce687fdb0ecbbd74f8103bb5bc149ad2, type: 3}
       propertyPath: m_Center.x
-      value: -0.10431599
+      value: -0.22654533
       objectReference: {fileID: 0}
     - target: {fileID: 8384242337664510546, guid: ce687fdb0ecbbd74f8103bb5bc149ad2, type: 3}
       propertyPath: m_Center.y
-      value: 0.072168104
+      value: 0.19552898
       objectReference: {fileID: 0}
     - target: {fileID: 8384242337664510546, guid: ce687fdb0ecbbd74f8103bb5bc149ad2, type: 3}
       propertyPath: m_Center.z
-      value: -2.2245054e-10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8384242337664510551, guid: ce687fdb0ecbbd74f8103bb5bc149ad2, type: 3}
       propertyPath: m_Name
