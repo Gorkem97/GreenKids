@@ -155,10 +155,10 @@ RectTransform:
   m_Father: {fileID: 31613817}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.07777389, y: 0.26751634}
-  m_AnchorMax: {x: 0.8985472, y: 0.7321613}
-  m_AnchoredPosition: {x: 2.0243988, y: 1.0703735}
-  m_SizeDelta: {x: 2.350006, y: 1.3200073}
+  m_AnchorMin: {x: 0.07777389, y: 0.27100003}
+  m_AnchorMax: {x: 0.90900004, y: 0.7287124}
+  m_AnchoredPosition: {x: 0.52441406, y: 0.05000305}
+  m_SizeDelta: {x: -0.65, y: -1.3900001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &26342913
 MonoBehaviour:
@@ -1138,7 +1138,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15.35
+  m_fontSize: 17.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3369,7 +3369,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.14267364, y: 0.05837892}
   m_AnchorMax: {x: 0.8244422, y: 0.9124316}
-  m_AnchoredPosition: {x: -0.8090124, y: 0.5000019}
+  m_AnchoredPosition: {x: -0.8090153, y: 0.5000019}
   m_SizeDelta: {x: 1.618, y: 1.052}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1634697976
@@ -3496,7 +3496,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.4
+  m_fontSize: 27.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3580,7 +3580,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.093}
   m_AnchorMax: {x: 0.9106872, y: 0.878}
-  m_AnchoredPosition: {x: 2.4139996, y: 0.5000019}
+  m_AnchoredPosition: {x: 2.4139977, y: 0.5000019}
   m_SizeDelta: {x: -2.838, y: -0.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1659542275
@@ -4354,7 +4354,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07777389, y: 0.26751634}
   m_AnchorMax: {x: 0.9247454, y: 0.7321613}
-  m_AnchoredPosition: {x: -1.678772, y: 0.6093979}
+  m_AnchoredPosition: {x: -1.678772, y: 0.60939026}
   m_SizeDelta: {x: -1.36, y: 0.14599991}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2028462812
