@@ -37,4 +37,8 @@ public class Main_UIControl : MonoBehaviour
     {
         SceneManager.LoadScene(10);
     }
+    public void Buda()
+    {
+        SceneManager.LoadScene(11);
+    }
 }

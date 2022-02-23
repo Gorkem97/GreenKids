@@ -26,15 +26,15 @@ public class SaksıDetection : MonoBehaviour
 
     void Update()
     {
-        if (birmi == true && birinsayisi < 4)
+        if (birmi == true && birinsayisi < 3)
         {
             birinsayisi += Time.deltaTime;
         }
-        if (birmi == false && birinsayisi < 4)
+        if (birmi == false && birinsayisi < 3)
         {
             birinsayisi = 0;
         }
-        if (birinsayisi >= 4)
+        if (birinsayisi >= 3)
         {
             Debug.Log("1Done");
             birbittimi = true;
@@ -47,15 +47,15 @@ public class SaksıDetection : MonoBehaviour
         } 
 
 
-        if (ikimi == true && ikininsayisi < 4)
+        if (ikimi == true && ikininsayisi < 3)
         {
             ikininsayisi += Time.deltaTime;
         }
-        if (ikimi == false && ikininsayisi < 4)
+        if (ikimi == false && ikininsayisi < 3)
         {
             ikininsayisi = 0;
         }
-        if (ikininsayisi >= 4)
+        if (ikininsayisi >= 3)
         {
             Debug.Log("2Done");
             ikibittimi = true;
@@ -68,15 +68,15 @@ public class SaksıDetection : MonoBehaviour
         }
 
 
-        if (ucmu == true && ucunsayisi < 4)
+        if (ucmu == true && ucunsayisi < 3)
         {
             ucunsayisi += Time.deltaTime;
         }
-        if (ucmu == false && ucunsayisi < 4)
+        if (ucmu == false && ucunsayisi < 3)
         {
             ucunsayisi = 0;
         }
-        if (ucunsayisi >= 4)
+        if (ucunsayisi >= 3)
         {
             Debug.Log("3Done");
             ucbittimi = true;

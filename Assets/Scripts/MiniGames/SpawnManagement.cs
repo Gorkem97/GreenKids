@@ -1,15 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpawnManagement : MonoBehaviour
 {
+    public Slider[] BudaValue = new Slider[2];
     public bool eslesmemi;
     public bool meyvemi;
+    public bool budama = false;
     public Vector3[] MeyveSpawnpoints = new Vector3[6];
     int meyveSayi = 5;
+    int budamasayi = 3;
     public GameObject[] sayilar = new GameObject[6];
     public GameObject[] yuvalar = new GameObject[6];
+    public Quaternion[] budamaRot = new Quaternion[4];
     public Vector3 Start_point1 = new Vector3(-5, 10, -5);
     public Vector3 yuva_start_point1 = new Vector3(-5, -5, -4);
     public int ilk_sutun;
@@ -27,7 +32,33 @@ public class SpawnManagement : MonoBehaviour
         }
         if (meyvemi == true)
         {
-            meyvespawner();
+            if (budama != true)
+            {
+                meyvespawner();
+            }
+            if (budama == true)
+            {
+                budamalar();
+            }
+        }
+    }
+    public void budamalar()
+    {
+        int ank = 1;
+        List<GameObject> budaspawn = new List<GameObject>();
+        budaspawn.Add(sayilar[0]);
+        budaspawn.Add(sayilar[1]);
+        budaspawn.Add(sayilar[2]);
+        budaspawn.Add(sayilar[3]);
+
+        for (int i = 0; i < 2; i++)
+        {
+            int yes = Random.Range(0, budamasayi +1);
+            budaspawn[yes].SetActive(true);
+            ;
+            ank -= 1;
+            budaspawn.Remove(budaspawn[yes]);
+            budamasayi -= 1;
         }
     }
     public void meyvespawner()

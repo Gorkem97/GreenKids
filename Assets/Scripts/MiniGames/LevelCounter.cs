@@ -9,12 +9,14 @@ public class LevelCounter : MonoBehaviour
     public AudioSource kalm;
     public GameObject Congrats;
     public GameObject toMainMenu;
+    public GameObject DONBUTTON;
     public float HowMuchPuzzle;
     public AudioSource finish_sound;
     public int NextScene;
     // Start is called before the first frame update
     void Start()
     {
+        DONBUTTON.SetActive(true);
         Congrats.SetActive(false);
         toMainMenu.SetActive(false);
     }
@@ -33,6 +35,7 @@ public class LevelCounter : MonoBehaviour
         }
         if (HowMuchPuzzle <= 0)
         {
+            DONBUTTON.SetActive(false);
             Congrats.SetActive(true);
             toMainMenu.SetActive(true);
             if (NextScene !=0)
@@ -50,5 +53,9 @@ public class LevelCounter : MonoBehaviour
     {
         yield return new WaitForSeconds(3); 
         SceneManager.LoadScene(NextScene);
+    }
+    public void LevelReloader()
+    {
+        SceneManager.LoadScene(0);
     }
 }
