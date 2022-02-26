@@ -1162,7 +1162,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 67.95
+  m_fontSize: 70.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1315,7 +1315,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 18.4
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1408,6 +1408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cc73b5036e679f4895abd9777d55c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sulamami: 0
   kilik: {fileID: 435270215}
   kalm: {fileID: 10875677}
   Congrats: {fileID: 873025634}
@@ -1900,17 +1901,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095491640}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 72.87499}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8750465, y: 0.8750465, z: 0.8750465}
   m_Children:
   - {fileID: 1055709143}
   m_Father: {fileID: 438750214}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.65771055, y: 0.8357153}
-  m_AnchorMax: {x: 0.8352895, y: 0.87000006}
-  m_AnchoredPosition: {x: 11.006996, y: 33}
-  m_SizeDelta: {x: 24.166, y: 14.413}
+  m_AnchorMin: {x: 0.67324996, y: 0.87830204}
+  m_AnchorMax: {x: 0.8885001, y: 0.926691}
+  m_AnchoredPosition: {x: 0.006996155, y: 1.5}
+  m_SizeDelta: {x: 12.166, y: 5.413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2095491642
 MonoBehaviour:

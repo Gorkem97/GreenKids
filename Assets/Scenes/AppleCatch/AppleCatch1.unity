@@ -875,6 +875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cc73b5036e679f4895abd9777d55c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sulamami: 0
   kilik: {fileID: 1748470646}
   kalm: {fileID: 130342507}
   Congrats: {fileID: 453530401}
@@ -1018,17 +1019,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812232807}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 72.87499}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8750465, y: 0.8750465, z: 0.8750465}
   m_Children:
   - {fileID: 419278696}
   m_Father: {fileID: 971782141}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75.95, y: 248.34372}
-  m_SizeDelta: {x: 74.72, y: 30}
+  m_AnchorMin: {x: 0.63486844, y: 0.9028543}
+  m_AnchorMax: {x: 0.858579, y: 0.94757634}
+  m_AnchoredPosition: {x: 0.94999695, y: 0.34371948}
+  m_SizeDelta: {x: 6.720001, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &868021552
 GameObject:

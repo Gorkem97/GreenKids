@@ -63,4 +63,16 @@ public class LevelCounter : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+    public void AlternateEnd()
+    {
+
+        DONBUTTON.SetActive(false);
+        Congrats.SetActive(true);
+        toMainMenu.SetActive(true);
+        finish_sound.Play();
+    }
+    public void Replay()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }

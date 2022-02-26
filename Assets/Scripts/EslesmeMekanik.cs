@@ -5,15 +5,17 @@ using UnityEngine;
 public class EslesmeMekanik : MonoBehaviour
 {
     public EslesmeManager eslestirici;
-    int birmi = 0;
+    public AudioSource kilik;
+    public AudioSource rong;
     public bool coroutinebasla = false;
     public Collider colieng;
     public GameObject texxX;
     public bool bitis = false;
      public int mousecunt;
-    // Start is called before the first frame update
     void Start()
     {
+        kilik = GameObject.Find("Klik").GetComponent<AudioSource>();
+        rong = GameObject.Find("WrongSound").GetComponent<AudioSource>();
         colieng = this.gameObject.GetComponent<Collider>();
         texxX = transform.GetChild(0).gameObject;
         texxX.SetActive(false);
@@ -63,9 +65,9 @@ public class EslesmeMekanik : MonoBehaviour
             colieng.enabled = true;
             if (coroutinebasla == true)
             {
+                rong.Play();
                 StartCoroutine(SetActiveCounter());
                 coroutinebasla = false;
-                birmi = 0;
             }
         }
 
@@ -108,6 +110,7 @@ public class EslesmeMekanik : MonoBehaviour
         if (mousecunt == 0)
         {
             coroutinebasla = true;
+            kilik.Play();
         }
         if (mousecunt == 1)
         {
