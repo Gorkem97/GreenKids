@@ -41,4 +41,8 @@ public class Main_UIControl : MonoBehaviour
     {
         SceneManager.LoadScene(11);
     }
+    public void Eslestir()
+    {
+        SceneManager.LoadScene(12);
+    }
 }

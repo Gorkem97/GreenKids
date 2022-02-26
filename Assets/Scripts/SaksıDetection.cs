@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SaksıDetection : MonoBehaviour
 {
+    public GameObject adam;
     public LevelCounter geri_sayim;
     public GameObject Sayac;
     public AudioSource SuSesi;
@@ -37,6 +38,7 @@ public class SaksıDetection : MonoBehaviour
         if (birinsayisi >= 3)
         {
             Debug.Log("1Done");
+            GameObject.Find("fidan1(Clone)").GetComponentInChildren<ParticleSystem>().Play();
             birbittimi = true;
             if (birlevel == false)
             {
@@ -58,6 +60,8 @@ public class SaksıDetection : MonoBehaviour
         if (ikininsayisi >= 3)
         {
             Debug.Log("2Done");
+            ParticleSystem party1 = GameObject.Find("Wow2").GetComponent<ParticleSystem>();
+            party1.Play();
             ikibittimi = true;
             if (ikilevel == false)
             {
@@ -79,6 +83,8 @@ public class SaksıDetection : MonoBehaviour
         if (ucunsayisi >= 3)
         {
             Debug.Log("3Done");
+            ParticleSystem party1 = GameObject.Find("Wow3").GetComponent<ParticleSystem>();
+            party1.Play();
             ucbittimi = true;
             if (uclevel == false)
             {

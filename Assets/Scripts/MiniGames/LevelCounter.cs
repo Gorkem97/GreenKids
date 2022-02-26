@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelCounter : MonoBehaviour
 {
+    public bool sulamami = false;
     public AudioSource kilik;
     public AudioSource kalm;
     public GameObject Congrats;
@@ -29,6 +30,10 @@ public class LevelCounter : MonoBehaviour
     public void LevelCounting()
     {
         HowMuchPuzzle -= 1;
+        if (sulamami == true)
+        {
+
+        }
         if (HowMuchPuzzle>0)
         {
             kalm.Play();

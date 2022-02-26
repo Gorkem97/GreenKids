@@ -10889,6 +10889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03fff4e3b341b744ba28e8b03d69109b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  adam: {fileID: 0}
   geri_sayim: {fileID: 1151963621}
   Sayac: {fileID: 1151963619}
   SuSesi: {fileID: 221654368}
@@ -11252,6 +11253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cc73b5036e679f4895abd9777d55c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sulamami: 0
   kilik: {fileID: 1936631393}
   kalm: {fileID: 748768644}
   Congrats: {fileID: 1097640051}
@@ -11718,7 +11720,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0.00015779526, z: 4.5905e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
