@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8384242337664510551}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: 4, z: 4}
+  m_LocalPosition: {x: -4, y: 4, z: 0}
   m_LocalScale: {x: 4.5, y: 4.5, z: 1}
   m_Children:
   - {fileID: 8384242338549636470}
@@ -46,7 +46,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.5, y: 0.5, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8384242337664510545
 MonoBehaviour:
@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b206663d25d409843918e152e11271f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  klick: {fileID: 0}
   kalm: {fileID: 3554345646480727264, guid: f6cbe69d813d4554c91dc2c00063ed1b, type: 3}
   geri_sayim: {fileID: 0}
   targetCube: {fileID: 5744727000600278316, guid: b89d72e80ef36254882027486f4d90e4, type: 3}
