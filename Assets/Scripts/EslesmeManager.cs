@@ -10,7 +10,14 @@ public class EslesmeManager : MonoBehaviour
     public GameObject replayer;
     public GameObject Finisher;
     public GameObject Sayackapat;
+    public GameObject risk;
+    public GameObject minSkor;
+
     public int eslesingcounter;
+
+    public SahneDuzeni SceneManagYeah;
+    bool sahneduzenlimi = false;
+
     public EslesmeMekanik sayim1;
     public EslesmeMekanik sayim2;
     public EslesmeMekanik sayim3;
@@ -42,10 +49,25 @@ public class EslesmeManager : MonoBehaviour
     void Start()
     {
         replayer.SetActive(false);
+
     }
     // Update is called once per frame
     void Update()
     {
+        if (sahneduzenlimi == false)
+        {
+            if (SceneManagYeah.kacoldusender < 7)
+            {
+                oyuncounter = SceneManagYeah.kacoldusender + 2;
+                eslesingcounter = 2 * oyuncounter;
+            }
+            if (SceneManagYeah.kacoldusender >= 7)
+            {
+                oyuncounter = 8;
+                eslesingcounter = 22 - SceneManagYeah.kacoldusender;
+            }
+            sahneduzenlimi = true;
+        }
 
         EslesmeGeriSayim.text = eslesingcounter.ToString();
 
@@ -98,6 +120,7 @@ public class EslesmeManager : MonoBehaviour
         }
         if (sekizler == 2 && mousecounter == 2)
         {
+            Wow.Play();
             bitti[7] = true;
             oyuncounter -= 1;
         }
@@ -121,15 +144,22 @@ public class EslesmeManager : MonoBehaviour
             LevelRenewer.AlternateEnd();
             Sayackapat.SetActive(false);
             Finisher.SetActive(true);
+            risk.SetActive(true);
+            SceneManagYeah.ContinueHafiza();
+            if (SceneManagYeah.yardirsender == true)
+            {
+                minSkor.SetActive(false);
+            }
 
             LevelRenewedhmm = true;
 
-            eslesingcounter = 15;
         }
-        if (eslesingcounter == 0)
+        if (eslesingcounter == 0 && LevelRenewedhmm == false)
         {
             Sayackapat.SetActive(false);
             replayer.SetActive(true);
+            SceneManagYeah.Defeat();
+            minSkor.SetActive(false);
         }
     }
     public void BirArttirici()

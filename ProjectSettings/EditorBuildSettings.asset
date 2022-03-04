@@ -42,6 +42,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Budama/Budama.unity
     guid: 205c0efeae7920d41b0fed466683cb14
   - enabled: 1
-    path: Assets/Scenes/Eslestirme/Eslesing.unity
-    guid: f28361bcc7117d749af32c5057bde3e6
+    path: "Assets/Scenes/Hafiza/yard\u0131r/Yard\u0131rYeah.unity"
+    guid: ad5bf4db7566eae419dc92b22bf0bd54
+  - enabled: 1
+    path: Assets/Scenes/Hafiza/tektek/deney.unity
+    guid: a0bea7da6599da446af8b49abd99e4c0
   m_configObjects: {}

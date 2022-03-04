@@ -5,8 +5,8 @@ using UnityEngine;
 public class EslesmeSpawn : MonoBehaviour
 {
     public GameObject[] Eslesenbirler = new GameObject[8];
-    public GameObject camcam;
     private GameObject[] Eslesenikiler = new GameObject[8];
+    public EslesmeManager eslesing;
     public int ilk_sutun;
     public int ikinci_sutun;
     public int ucuncu_sutun;
@@ -15,16 +15,23 @@ public class EslesmeSpawn : MonoBehaviour
     public float yol;
     public Vector3 Start_point1 = new Vector3(-5, 10, -5);
     int a = 0;
+
+    bool Spawnem = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        Sýralama();
+        StartCoroutine(Spawnwait());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Spawnem == true)
+        {
+            Sýralama();
+            Spawnem = false;
+        }
     }
 
     public void Sýralama()
@@ -41,7 +48,7 @@ public class EslesmeSpawn : MonoBehaviour
         Eslesenikiler[7] = Eslesenbirler[7];
 
 
-        sutunbasi1 = ilk_sutun + ikinci_sutun + ucuncu_sutun + dorduncu_sutun;
+        sutunbasi1 = eslesing.oyuncounter*2;
 
 
         List<GameObject> EslesmeSpawn = new List<GameObject>();
@@ -64,7 +71,7 @@ public class EslesmeSpawn : MonoBehaviour
 
 
 
-        for (int i = 0; i < ilk_sutun + ikinci_sutun + ucuncu_sutun + dorduncu_sutun; i++)
+        for (int i = 0; i < eslesing.oyuncounter*2; i++)
         {
             if (i == ilk_sutun)
             {
@@ -94,5 +101,11 @@ public class EslesmeSpawn : MonoBehaviour
             sutunbasi1 -= 1;
         }
 
+    }
+
+    IEnumerator Spawnwait()
+    {
+        yield return new WaitForSeconds(0.1f);
+        Spawnem = true;
     }
 }

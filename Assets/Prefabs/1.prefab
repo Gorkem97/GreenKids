@@ -116,6 +116,9 @@ MonoBehaviour:
   targetCube: {fileID: 0}
   cube_start_position: {x: 0, y: 0, z: 0}
   icinde_mi: 0
+  minigame: 1
+  SulamaRotate: {x: 0, y: 0, z: 0}
+  su: {fileID: 0}
 --- !u!54 &9197600726674975339
 Rigidbody:
   m_ObjectHideFlags: 0
