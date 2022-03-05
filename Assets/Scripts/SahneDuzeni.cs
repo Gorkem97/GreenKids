@@ -13,6 +13,7 @@ public class SahneDuzeni : MonoBehaviour
     public bool yardirsender;
     public int kacoldusender;
     public int barajpuan = 0;
+    public bool eslesmemi = false;
 
 
     public static bool yardirsinmi;
@@ -55,6 +56,10 @@ public class SahneDuzeni : MonoBehaviour
         {
             barajui.text = barajpuan.ToString();
             barajhesapla();
+        }
+        if (eslesmemi == true)
+        {
+            puan = 40;
         }
     }
     public void ContinueHafiza()

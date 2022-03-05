@@ -65,6 +65,10 @@ public class EslesmeManager : MonoBehaviour
             {
                 oyuncounter = 8;
                 eslesingcounter = 22 - SceneManagYeah.kacoldusender;
+                if (eslesingcounter < 8)
+                {
+                    eslesingcounter = 8;
+                }
             }
             sahneduzenlimi = true;
         }
