@@ -855,7 +855,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34
+  m_fontSize: 34.2
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2882,7 +2882,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 20
+  orthographic size: 22
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3583,10 +3583,10 @@ RectTransform:
   m_Father: {fileID: 1844180007}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.38112202, y: 0.7045512}
-  m_AnchorMax: {x: 0.618439, y: 0.8228504}
-  m_AnchoredPosition: {x: 0, y: 0.5}
-  m_SizeDelta: {x: 4.404999, y: -0.7409973}
+  m_AnchorMin: {x: 0.38112202, y: 0.80200005}
+  m_AnchorMax: {x: 0.62769157, y: 0.91562223}
+  m_AnchoredPosition: {x: -1.4295502, y: 1.5}
+  m_SizeDelta: {x: 1.4049988, y: 2.2590027}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2105425477
 MonoBehaviour:
@@ -3804,7 +3804,7 @@ MonoBehaviour:
   ucuncu_sutun: 4
   dorduncu_sutun: 4
   yol: 5
-  Start_point1: {x: -5, y: 10, z: -5}
+  Start_point1: {x: -5, y: 13, z: -5}
 --- !u!4 &2125388723
 Transform:
   m_ObjectHideFlags: 0

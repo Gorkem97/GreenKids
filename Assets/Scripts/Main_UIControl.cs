@@ -106,7 +106,7 @@ public class Main_UIControl : MonoBehaviour
     }
     public void HafizaYardir()
     {
-        SceneManager.LoadScene(18);
+        SceneManager.LoadScene(12);
     }
     public void HafizaTab()
     {
