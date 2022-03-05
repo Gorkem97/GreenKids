@@ -381,7 +381,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 20
+  orthographic size: 30
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -624,7 +624,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000015258789, y: 0.5000305}
+  m_AnchoredPosition: {x: -0.000030517578, y: 0.5000305}
   m_SizeDelta: {x: 0, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &729105794
@@ -711,7 +711,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.05
+  m_fontSize: 34.25
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -831,7 +831,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23300001, y: 0.6868504}
   m_AnchorMax: {x: 0.78063416, y: 0.7655385}
-  m_AnchoredPosition: {x: -0.45600128, y: 0.32000732}
+  m_AnchoredPosition: {x: -0.45599365, y: 0.32000732}
   m_SizeDelta: {x: 2.1009998, y: 2.505005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &742915159
@@ -1550,7 +1550,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 67.7
+  m_fontSize: 68
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2439,6 +2439,7 @@ MonoBehaviour:
   Finisher: {fileID: 1114261823}
   Sayackapat: {fileID: 735638983}
   risk: {fileID: 0}
+  minSkor: {fileID: 0}
   eslesingcounter: 18
   SceneManagYeah: {fileID: 0}
   sayim1: {fileID: 0}
@@ -3322,8 +3323,8 @@ MonoBehaviour:
   ikinci_sutun: 4
   ucuncu_sutun: 4
   dorduncu_sutun: 4
-  yol: 5
-  Start_point1: {x: -5, y: 10, z: -5}
+  yol: 7
+  Start_point1: {x: -7, y: 10, z: -5}
 --- !u!4 &2062509875
 Transform:
   m_ObjectHideFlags: 0

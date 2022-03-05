@@ -76,22 +76,22 @@ public class EslesmeSpawn : MonoBehaviour
             if (i == ilk_sutun)
             {
                 Start_point1.x -= ilk_sutun * yol;
-                Start_point1.y -= yol;
+                Start_point1.y -= yol*1.5f;
             }
             if (i == ilk_sutun + ikinci_sutun)
             {
                 Start_point1.x -= ikinci_sutun * yol;
-                Start_point1.y -= yol;
+                Start_point1.y -= yol*1.5f;
             }
             if (i == ilk_sutun + ikinci_sutun + ucuncu_sutun)
             {
                 Start_point1.x -= ucuncu_sutun * yol;
-                Start_point1.y -= yol;
+                Start_point1.y -= yol*1.5f;
             }
             if (i == ilk_sutun + ikinci_sutun + ucuncu_sutun + dorduncu_sutun)
             {
                 Start_point1.x -= dorduncu_sutun * yol;
-                Start_point1.y -= yol;
+                Start_point1.y -= yol*1.5f;
 
             }
             int b = Random.Range(0, sutunbasi1);
