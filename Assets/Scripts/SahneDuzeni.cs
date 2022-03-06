@@ -36,6 +36,10 @@ public class SahneDuzeni : MonoBehaviour
             nihaui.text = nihaipuan.ToString();
             puan = 0;
         }
+        if (eslesmemi == true)
+        {
+            puan = 40;
+        }
         yardirsender = yardirsinmi;
         kacoldusender = kacoldu;
 
@@ -58,10 +62,6 @@ public class SahneDuzeni : MonoBehaviour
             barajui.text = barajpuan.ToString();
             ikincipuanui.text = puan.ToString();
             barajhesapla();
-        }
-        if (eslesmemi == true)
-        {
-            puan = 40;
         }
     }
     public void ContinueHafiza()
@@ -105,5 +105,9 @@ public class SahneDuzeni : MonoBehaviour
     {
         puan = barajpuan;
         kacoldu = 0;
+    }
+    public void don()
+    {
+        puan = 0;
     }
 }

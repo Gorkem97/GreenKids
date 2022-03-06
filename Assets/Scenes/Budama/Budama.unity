@@ -1914,7 +1914,7 @@ RectTransform:
   m_GameObject: {fileID: 517067622}
   m_LocalRotation: {x: -0, y: -0, z: 0.43760297, w: 0.8991684}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 1.5, y: 1, z: 1}
   m_Children:
   - {fileID: 744419255}
   - {fileID: 1193849953}
@@ -2384,6 +2384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EslesmeControl: {fileID: 0}
   puanui: {fileID: 1757316250}
+  ikincipuanui: {fileID: 0}
   barajui: {fileID: 1018222061}
   nihaui: {fileID: 0}
   yardirsender: 0
@@ -2959,7 +2960,7 @@ RectTransform:
   m_GameObject: {fileID: 764679048}
   m_LocalRotation: {x: -0, y: -0, z: 0.4204882, w: -0.907298}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 1.5, y: 1, z: 1}
   m_Children:
   - {fileID: 201078701}
   - {fileID: 1271220147}
@@ -3339,7 +3340,7 @@ RectTransform:
   m_GameObject: {fileID: 879781344}
   m_LocalRotation: {x: 0.0059081223, y: 0.004880065, z: -0.9365304, w: 0.35050252}
   m_LocalPosition: {x: 0, y: 0, z: -0.05138271}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 1.5, y: 1, z: 1}
   m_Children:
   - {fileID: 74732822}
   - {fileID: 1305410083}
@@ -4742,7 +4743,7 @@ RectTransform:
   m_GameObject: {fileID: 1257967552}
   m_LocalRotation: {x: -0, y: -0, z: 0.9852266, w: 0.17125617}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 1.5, y: 1, z: 1}
   m_Children:
   - {fileID: 4284111}
   - {fileID: 1311108960}
@@ -5214,7 +5215,7 @@ RectTransform:
   m_GameObject: {fileID: 1335460358}
   m_LocalRotation: {x: -0, y: -0, z: 0.91753906, w: 0.39764568}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 1.5, y: 1, z: 1}
   m_Children:
   - {fileID: 1753956489}
   - {fileID: 1032996316}
@@ -5785,7 +5786,7 @@ RectTransform:
   m_GameObject: {fileID: 1614898257}
   m_LocalRotation: {x: -0, y: -0, z: -0.9983389, w: 0.057615235}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 1.5, y: 1, z: 1}
   m_Children:
   - {fileID: 673707372}
   - {fileID: 531814613}
@@ -5954,7 +5955,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1675975256
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6422,7 +6423,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 300
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -6898,6 +6899,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1292900148}
         m_TargetAssemblyTypeName: LevelCounter, Assembly-CSharp
         m_MethodName: LevelReloader
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 654070412}
+        m_TargetAssemblyTypeName: SahneDuzeni, Assembly-CSharp
+        m_MethodName: don
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

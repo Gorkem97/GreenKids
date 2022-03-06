@@ -1436,6 +1436,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1776911324}
+        m_TargetAssemblyTypeName: SahneDuzeni, Assembly-CSharp
+        m_MethodName: don
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &852901586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2364,7 +2376,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 300
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -3436,6 +3448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EslesmeControl: {fileID: 0}
   puanui: {fileID: 1339786536}
+  ikincipuanui: {fileID: 0}
   barajui: {fileID: 2008047639}
   nihaui: {fileID: 0}
   yardirsender: 0
