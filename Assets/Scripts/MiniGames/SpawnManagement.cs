@@ -5,13 +5,16 @@ using UnityEngine.UI;
 
 public class SpawnManagement : MonoBehaviour
 {
+    GameObject pilav;
+    Vector3 sa;
+    public float adana = 0.7f;
     public Slider[] BudaValue = new Slider[2];
     public bool eslesmemi;
     public bool meyvemi;
     public bool budama = false;
     public Vector3[] MeyveSpawnpoints = new Vector3[6];
     int meyveSayi = 5;
-    int budamasayi = 3;
+    int budamasayi = 5;
     public GameObject[] sayilar = new GameObject[6];
     public GameObject[] yuvalar = new GameObject[6];
     public Quaternion[] budamaRot = new Quaternion[4];
@@ -50,8 +53,10 @@ public class SpawnManagement : MonoBehaviour
         budaspawn.Add(sayilar[1]);
         budaspawn.Add(sayilar[2]);
         budaspawn.Add(sayilar[3]);
+        budaspawn.Add(sayilar[4]);
+        budaspawn.Add(sayilar[5]);
 
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < 3; i++)
         {
             int yes = Random.Range(0, budamasayi +1);
             budaspawn[yes].SetActive(true);
@@ -63,22 +68,35 @@ public class SpawnManagement : MonoBehaviour
     }
     public void meyvespawner()
     {
+
         for (int i = 0; i < 6; i++)
         {
             int a = Random.Range(0, 3);
             if (a == 0)
             {
-                Instantiate(sayilar[0], MeyveSpawnpoints[meyveSayi],transform.rotation);
+                pilav = Instantiate(sayilar[0], MeyveSpawnpoints[meyveSayi],transform.rotation) as GameObject;
+                sa = pilav.transform.localScale;
+                sa.x = sa.x * adana;
+                sa.y = sa.y * adana;
+                pilav.transform.localScale = sa;
                 meyveSayi -= 1;
             }
             if (a == 1)
             {
-                Instantiate(sayilar[1], MeyveSpawnpoints[meyveSayi], transform.rotation);
+                pilav = Instantiate(sayilar[1], MeyveSpawnpoints[meyveSayi], transform.rotation) as GameObject;
+                sa = pilav.transform.localScale;
+                sa.x = sa.x * adana;
+                sa.y = sa.y * adana;
+                pilav.transform.localScale = sa;
                 meyveSayi -= 1;
             }
             if (a == 2)
             {
-                Instantiate(sayilar[2], MeyveSpawnpoints[meyveSayi], transform.rotation);
+                pilav = Instantiate(sayilar[2], MeyveSpawnpoints[meyveSayi], transform.rotation) as GameObject;
+                sa = pilav.transform.localScale;
+                sa.x = sa.x * adana;
+                sa.y = sa.y * adana;
+                pilav.transform.localScale = sa;
                 meyveSayi -= 1;
             }
         }

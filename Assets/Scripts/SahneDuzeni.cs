@@ -8,6 +8,7 @@ public class SahneDuzeni : MonoBehaviour
 {
     public EslesmeManager EslesmeControl;
     public Text puanui;
+    public Text ikincipuanui;
     public Text barajui;
     public Text nihaui;
     public bool yardirsender;
@@ -55,6 +56,7 @@ public class SahneDuzeni : MonoBehaviour
         if (yardirsinmi == true)
         {
             barajui.text = barajpuan.ToString();
+            ikincipuanui.text = puan.ToString();
             barajhesapla();
         }
         if (eslesmemi == true)
@@ -67,11 +69,6 @@ public class SahneDuzeni : MonoBehaviour
         int katsayi = EslesmeControl.eslesingcounter + 1;
         puan += kacoldusender * 2 * katsayi;
         
-    }
-    public void Menuhuzun()
-    {
-        puan = barajpuan;
-        SceneManager.LoadScene(0);    
     }
     public void yardirmibasla()
     {

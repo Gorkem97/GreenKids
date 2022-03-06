@@ -163,7 +163,10 @@ public class EslesmeManager : MonoBehaviour
             Sayackapat.SetActive(false);
             replayer.SetActive(true);
             SceneManagYeah.Defeat();
-            minSkor.SetActive(false);
+            if (SceneManagYeah.yardirsender == true)
+            {
+                SceneManagYeah.Defeat();
+            }
         }
     }
     public void BirArttirici()
