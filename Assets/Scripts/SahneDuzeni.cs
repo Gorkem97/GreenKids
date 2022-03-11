@@ -13,55 +13,65 @@ public class SahneDuzeni : MonoBehaviour
     public Text nihaui;
     public bool yardirsender;
     public int kacoldusender;
+    public int nihaisender ;
     public int barajpuan = 0;
     public bool eslesmemi = false;
+    public bool coklumu = false;
 
 
     public static bool yardirsinmi;
 
     public static int kacoldu;
-    public static int nihaipuan = 0;
+   // public static int nihaipuan = 0;
     public static int puan = 0;
     void Start()
     {
+        kacoldusender = kacoldu;
         if (SceneManager.GetActiveScene().name != "Main")
         {
             kacoldu += 1;
         }
         if (SceneManager.GetActiveScene().name == "Main")
         {
+            LoadData();
             yardirsinmi = false;
             kacoldu = 0;
-            nihaipuan += puan;
-            nihaui.text = nihaipuan.ToString();
+            nihaisender += puan;
+            SaveData();
+            nihaui.text = nihaisender.ToString();
             puan = 0;
+        }
+        if (SceneManager.GetActiveScene().name == "deney")
+        {
+            kacoldu -= 1;
         }
         if (eslesmemi == true)
         {
+            puan = 10;
+        }
+        if (coklumu == true)
+        {
             puan = 40;
         }
-        yardirsender = yardirsinmi;
-        kacoldusender = kacoldu;
-
         Debug.Log(kacoldu);
         Debug.Log(puan);
-        Debug.Log(nihaipuan);
+        Debug.Log(nihaisender);
 
     }
     void Update()
     {
+        //nihaipuan = nihaisender;
         yardirsender = yardirsinmi;
         kacoldusender = kacoldu;
         if (SceneManager.GetActiveScene().name != "Main")
         {
-
             puanui.text = puan.ToString();
         }
         if (yardirsinmi == true)
         {
+            barajhesapla();
             barajui.text = barajpuan.ToString();
             ikincipuanui.text = puan.ToString();
-            barajhesapla();
         }
     }
     public void ContinueHafiza()
@@ -78,7 +88,7 @@ public class SahneDuzeni : MonoBehaviour
     {
         if (puan <20 && puan <=0)
         {
-            barajpuan = puan;
+            barajpuan = 0;
         }
         if (puan >= 20 && puan < 60)
         {
@@ -110,4 +120,14 @@ public class SahneDuzeni : MonoBehaviour
     {
         puan = 0;
     }
+    public void SaveData()
+    {
+        SaveKeep.SavePuan(this);
+    }
+    public  void LoadData()
+    {
+        SaveSystem data = SaveKeep.loadsave();
+        nihaisender = data.tumpuan;
+    }
+
 }

@@ -703,7 +703,8 @@ MonoBehaviour:
   yardirsender: 0
   kacoldusender: 0
   barajpuan: 0
-  eslesmemi: 1
+  eslesmemi: 0
+  coklumu: 1
 --- !u!4 &484291647
 Transform:
   m_ObjectHideFlags: 0

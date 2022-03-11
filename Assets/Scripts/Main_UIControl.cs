@@ -62,17 +62,12 @@ public class Main_UIControl : MonoBehaviour
     }
     public void Hafiza3()
     {
-        StartCoroutine(beklemek());
+        
+            scener.kacolduartir();
+        
+            StartCoroutine(beklemek());
     }
     public void Hafiza4()
-    {
-        for (int i = 0; i < 1; i++)
-        {
-            scener.kacolduartir();
-        }
-        StartCoroutine(beklemek());
-    }
-    public void Hafiza5()
     {
         for (int i = 0; i < 2; i++)
         {
@@ -80,7 +75,7 @@ public class Main_UIControl : MonoBehaviour
         }
         StartCoroutine(beklemek());
     }
-    public void Hafiza6()
+    public void Hafiza5()
     {
         for (int i = 0; i < 3; i++)
         {
@@ -88,7 +83,7 @@ public class Main_UIControl : MonoBehaviour
         }
         StartCoroutine(beklemek());
     }
-    public void Hafiza7()
+    public void Hafiza6()
     {
         for (int i = 0; i < 4; i++)
         {
@@ -96,9 +91,17 @@ public class Main_UIControl : MonoBehaviour
         }
         StartCoroutine(beklemek());
     }
-    public void Hafiza8()
+    public void Hafiza7()
     {
         for (int i = 0; i < 5; i++)
+        {
+            scener.kacolduartir();
+        }
+        StartCoroutine(beklemek());
+    }
+    public void Hafiza8()
+    {
+        for (int i = 0; i < 6; i++)
         {
             scener.kacolduartir();
         }

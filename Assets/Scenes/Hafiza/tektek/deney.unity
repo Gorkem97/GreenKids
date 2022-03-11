@@ -828,7 +828,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Terkrar Dene
+  m_text: Tekrar Dene
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b2590d63c6142ac4494c47ac6e295b9a, type: 2}
   m_sharedMaterial: {fileID: 2328877963946866689, guid: b2590d63c6142ac4494c47ac6e295b9a, type: 2}
@@ -855,7 +855,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.85
+  m_fontSize: 26
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2259,7 +2259,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36.35
+  m_fontSize: 34.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3501,7 +3501,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1649066308
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4257,7 +4257,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.1
+  m_fontSize: 27.25
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4721,7 +4721,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1927413905
 RectTransform:
   m_ObjectHideFlags: 0

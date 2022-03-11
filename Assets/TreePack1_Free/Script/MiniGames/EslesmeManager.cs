@@ -59,15 +59,15 @@ public class EslesmeManager : MonoBehaviour
             if (SceneManagYeah.kacoldusender < 7)
             {
                 oyuncounter = SceneManagYeah.kacoldusender + 2;
-                eslesingcounter = 2 * oyuncounter;
+                eslesingcounter = oyuncounter + 4;
             }
             if (SceneManagYeah.kacoldusender >= 7)
             {
                 oyuncounter = 8;
                 eslesingcounter = 22 - SceneManagYeah.kacoldusender;
-                if (eslesingcounter < 8)
+                if (eslesingcounter < 0)
                 {
-                    eslesingcounter = 8;
+                    eslesingcounter = 0;
                 }
             }
             sahneduzenlimi = true;
@@ -85,48 +85,56 @@ public class EslesmeManager : MonoBehaviour
             Wow.Play();
             bitti[0] = true;
             oyuncounter -= 1;
+            eslesingcounter += 1;
         }
         if (ikiler == 2 && mousecounter == 2)
         {
             Wow.Play();
             bitti[1] = true;
             oyuncounter -= 1;
+            eslesingcounter += 1;
         }
         if (ucler == 2 && mousecounter == 2)
         {
             Wow.Play();
             bitti[2] = true;
             oyuncounter -= 1;
+            eslesingcounter += 1;
         }
         if (dortler == 2 && mousecounter == 2)
         {
             Wow.Play();
             bitti[3] = true;
             oyuncounter -= 1;
+            eslesingcounter += 1;
         }
         if (besler == 2 && mousecounter == 2)
         {
             Wow.Play();
             bitti[4] = true;
             oyuncounter -= 1;
+            eslesingcounter += 1;
         }
         if (altilar == 2 && mousecounter == 2)
         {
             Wow.Play();
             bitti[5] = true;
             oyuncounter -= 1;
+            eslesingcounter += 1;
         }
         if (yediler == 2 && mousecounter == 2)
         {
             Wow.Play();
             bitti[6] = true;
             oyuncounter -= 1;
+            eslesingcounter += 1;
         }
         if (sekizler == 2 && mousecounter == 2)
         {
             Wow.Play();
             bitti[7] = true;
             oyuncounter -= 1;
+            eslesingcounter += 1;
         }
         if (mousecounter == 2)
         {
@@ -146,14 +154,9 @@ public class EslesmeManager : MonoBehaviour
         if (oyuncounter == 0 && LevelRenewedhmm == false)
         {
             LevelRenewer.AlternateEnd();
-            Sayackapat.SetActive(false);
             Finisher.SetActive(true);
             risk.SetActive(true);
             SceneManagYeah.ContinueHafiza();
-            if (SceneManagYeah.yardirsender == true)
-            {
-                minSkor.SetActive(false);
-            }
 
             LevelRenewedhmm = true;
 
@@ -162,10 +165,14 @@ public class EslesmeManager : MonoBehaviour
         {
             Sayackapat.SetActive(false);
             replayer.SetActive(true);
-            SceneManagYeah.Defeat();
             if (SceneManagYeah.yardirsender == true)
             {
                 SceneManagYeah.Defeat();
+                minSkor.SetActive(false);
+            }
+            if(SceneManagYeah.yardirsender == false)
+            {
+                SceneManagYeah.kacoldusender -= 1; 
             }
         }
     }
