@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: seviyeshow Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: MainUI
+  m_TableCollectionNameGuidString: 0da0f87ad923b2e488ded99f8faabcfd
+  m_Entries:
+  - m_Id: 155302109184
+    m_Key: "Seviye g\xF6stergesi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 332379000020992
+    m_Key: Mini oyunlar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 332810979778560
+    m_Key: "E\u015Fle\u015Ftirme Oyunu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 332880915603456
+    m_Key: "S\u0131ralama Oyunu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333015867334656
+    m_Key: "Haf\u0131za Oyunu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333244595314688
+    m_Key: "Geri D\xF6n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333319191011328
+    m_Key: Skor Oyunu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333364653072384
+    m_Key: "3'l\xFC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333474128601088
+    m_Key: "4'l\xFC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333476603240448
+    m_Key: 5'li
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333478167715840
+    m_Key: "6'l\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333479656693760
+    m_Key: 7'li
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333493552422912
+    m_Key: 8'li
+    m_Metadata:
+      m_Items: []
+  - m_Id: 383109090123776
+    m_Key: Ayarlar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1056963135414272
+    m_Key: Kapat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1057051958190080
+    m_Key: Credits
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1647119516720

@@ -47,4 +47,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hafiza/tektek/deney.unity
     guid: a0bea7da6599da446af8b49abd99e4c0
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/QR Reading.unity
+    guid: 894ceb32cf88c15449817435050946a8
+  - enabled: 0
+    path: Assets/Scenes/anotherCamera.unity
+    guid: c60880094a5180a49ade7f76debc9887
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 06529b23b8d207240bb33a2f9f009fd6, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 0ec9ad6ec1a8cee40a0b702afa5589db, type: 2}

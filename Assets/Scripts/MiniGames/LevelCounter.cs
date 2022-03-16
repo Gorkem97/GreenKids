@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class LevelCounter : MonoBehaviour
 {
+    public Animator transition;
+    public float transitiontime = 1;
+
     public bool sulamami = false;
     public AudioSource kilik;
     public AudioSource kalm;
@@ -30,10 +33,6 @@ public class LevelCounter : MonoBehaviour
     public void LevelCounting()
     {
         HowMuchPuzzle -= 1;
-        if (sulamami == true)
-        {
-
-        }
         if (HowMuchPuzzle>0)
         {
             kalm.Play();
@@ -52,16 +51,18 @@ public class LevelCounter : MonoBehaviour
     }
     public void LevelEnder()
     {
-        SceneManager.LoadScene(NextScene);
+        StartCoroutine(Reload(NextScene));
     }
     IEnumerator wait()
     {
-        yield return new WaitForSeconds(3); 
+        yield return new WaitForSeconds(3);
+        transition.SetTrigger("Change");
+        yield return new WaitForSeconds(transitiontime);
         SceneManager.LoadScene(NextScene);
     }
     public void LevelReloader()
     {
-        SceneManager.LoadScene(0);
+        StartCoroutine(Reload(0));
     }
     public void AlternateEnd()
     {
@@ -73,6 +74,13 @@ public class LevelCounter : MonoBehaviour
     }
     public void Replay()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        StartCoroutine(Reload(SceneManager.GetActiveScene().buildIndex));
+    }
+    IEnumerator Reload(int gidecekalan)
+    {
+
+        transition.SetTrigger("Change");
+        yield return new WaitForSeconds(transitiontime);
+        SceneManager.LoadScene(gidecekalan);
     }
 }

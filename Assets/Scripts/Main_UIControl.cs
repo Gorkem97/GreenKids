@@ -5,9 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class Main_UIControl : MonoBehaviour
 {
+    public Animator transition;
+    public float transitiontime;
+
+
     public GameObject MainTab;
     public GameObject MiniTab;
     public GameObject HafizaHub;
+    public GameObject Credits;
+    public LevelManager seviyeler;
+
+    public GameObject message;
 
     public SahneDuzeni scener;
 
@@ -15,7 +23,11 @@ public class Main_UIControl : MonoBehaviour
 
     void Start()
     {
-        CloseTab();
+        scener.LanguageIdentifier();
+        if (SceneManager.GetActiveScene().name == "Main")
+        {
+            CloseTab();
+        }
     }
     private void Update()
     {
@@ -25,13 +37,9 @@ public class Main_UIControl : MonoBehaviour
             bekledim = false;
         }
     }
-    public void Eslesme()
+    public void SceneOpener(int sceneNumber)
     {
-        SceneManager.LoadScene(1);
-    }
-    public void Siralama()
-    {
-        SceneManager.LoadScene(5);
+        StartCoroutine(LoadLevel(sceneNumber));
     }
     public void MiniGame()
     {
@@ -41,75 +49,17 @@ public class Main_UIControl : MonoBehaviour
     public void CloseTab()
     {
         MainTab.SetActive(true);
+        Credits.SetActive(false);
         MiniTab.SetActive(false);
         HafizaHub.SetActive(false);
     }
-    public void ElmaTopla()
+    public void Hafiza4(int kacli)
     {
-        SceneManager.LoadScene(9);
-    }
-    public void Sula()
-    {
-        SceneManager.LoadScene(10);
-    }
-    public void Buda()
-    {
-        SceneManager.LoadScene(11);
-    }
-    public void Eslestir()
-    {
-        SceneManager.LoadScene(12);
-    }
-    public void Hafiza3()
-    {
-        
-            scener.kacolduartir();
-        
-            StartCoroutine(beklemek());
-    }
-    public void Hafiza4()
-    {
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < kacli-2; i++)
         {
             scener.kacolduartir();
         }
         StartCoroutine(beklemek());
-    }
-    public void Hafiza5()
-    {
-        for (int i = 0; i < 3; i++)
-        {
-            scener.kacolduartir();
-        }
-        StartCoroutine(beklemek());
-    }
-    public void Hafiza6()
-    {
-        for (int i = 0; i < 4; i++)
-        {
-            scener.kacolduartir();
-        }
-        StartCoroutine(beklemek());
-    }
-    public void Hafiza7()
-    {
-        for (int i = 0; i < 5; i++)
-        {
-            scener.kacolduartir();
-        }
-        StartCoroutine(beklemek());
-    }
-    public void Hafiza8()
-    {
-        for (int i = 0; i < 6; i++)
-        {
-            scener.kacolduartir();
-        }
-        StartCoroutine(beklemek());
-    }
-    public void HafizaYardir()
-    {
-        SceneManager.LoadScene(12);
     }
     public void HafizaTab()
     {
@@ -117,10 +67,24 @@ public class Main_UIControl : MonoBehaviour
         MainTab.SetActive(false);
         MiniTab.SetActive(false);
     }
+    public void creditTab()
+    {
+
+        Credits.SetActive(true);
+        MainTab.SetActive(false);
+        MiniTab.SetActive(false);
+    }
+
 
     IEnumerator beklemek()
     {
         yield return new WaitForSeconds(0.1f);
         bekledim = true;
+    }
+    IEnumerator LoadLevel(int levelIndex)
+    {
+        transition.SetTrigger("Change");
+        yield return new WaitForSeconds(transitiontime);
+        SceneManager.LoadScene(levelIndex);
     }
 }

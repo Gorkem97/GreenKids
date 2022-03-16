@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: seviyeshow_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 0da0f87ad923b2e488ded99f8faabcfd, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 155302109184
+    m_Localized: 'Tree Level:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 332379000020992
+    m_Localized: Mini Games
+    m_Metadata:
+      m_Items: []
+  - m_Id: 332810979778560
+    m_Localized: Matching Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 332880915603456
+    m_Localized: Sorting Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333015867334656
+    m_Localized: Memory Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333244595314688
+    m_Localized: Go Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333319191011328
+    m_Localized: Score Run
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333364653072384
+    m_Localized: Triplet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333474128601088
+    m_Localized: Quartet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333476603240448
+    m_Localized: Quintet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333478167715840
+    m_Localized: Sestet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333479656693760
+    m_Localized: Septet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333493552422912
+    m_Localized: Octet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 383109090123776
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1056963135414272
+    m_Localized: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1057051958190080
+    m_Localized: "Coding, 2D design and images\n-G\xF6rkem U\xE7ar-\n3D design and
+      images\n-G\xF6kdeniz Keskin-\n\n\n\n\n*QR Code Library\n-Zxing: https://github.com/zxing/zxing\nhttps://github.com/zxing/zxing/blob/master/LICENSE"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

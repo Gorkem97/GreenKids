@@ -7,7 +7,7 @@ public static class SaveKeep
     public static void SavePuan(SahneDuzeni sahnecim)
     {
         BinaryFormatter formatcý = new BinaryFormatter();
-        string yol = Application.persistentDataPath + "/sahnecim.puantiye";
+        string yol = Application.persistentDataPath + "/sahnecim.puantik";
         FileStream stream = new FileStream(yol, FileMode.Create);
 
         SaveSystem data = new SaveSystem(sahnecim);
@@ -18,7 +18,7 @@ public static class SaveKeep
 
     public static SaveSystem loadsave()
     {
-        string yol = Application.persistentDataPath + "/sahnecim.puantiye";
+        string yol = Application.persistentDataPath + "/sahnecim.puantik";
         if (File.Exists(yol))
         {
             BinaryFormatter formatci = new BinaryFormatter();

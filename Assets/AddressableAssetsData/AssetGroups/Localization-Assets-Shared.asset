@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Shared
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Shared
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 4a3feba0824eb5c45a4f1f6a8504fc60
+  m_SerializeEntries:
+  - m_GUID: 0da0f87ad923b2e488ded99f8faabcfd
+    m_Address: Assets/Localization/Tables/seviyeshow Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 919553a08499ed44ea6395a449e48183
+    m_Address: Assets/Localization/Tables/OtherUI Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: fbb4c08719a76f942851543ce0e2ee2e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 72341ced1ffd5ab43991e34073023824, type: 2}
+    - {fileID: 11400000, guid: cdd7de2c602e2d34baee7ab453062cd5, type: 2}
