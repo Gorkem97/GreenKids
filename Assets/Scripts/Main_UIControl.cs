@@ -23,7 +23,6 @@ public class Main_UIControl : MonoBehaviour
 
     void Start()
     {
-        scener.LanguageIdentifier();
         if (SceneManager.GetActiveScene().name == "Main")
         {
             CloseTab();

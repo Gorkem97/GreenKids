@@ -6,9 +6,18 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
+using UnityEngine.Advertisements;
 
 public class SahneDuzeni : MonoBehaviour
 {
+
+#if UNITY_IOS
+    string gameId = "4664847";
+#else
+    string gameId = "4664846";
+#endif
+
+
 
     public EslesmeManager EslesmeControl;
     public Text puanui;
@@ -25,12 +34,14 @@ public class SahneDuzeni : MonoBehaviour
 
 
     public static bool yardirsinmi;
-
+    public static int adcounter = 0;
     public static int kacoldu;
    // public static int nihaipuan = 0;
     public static int puan = 0;
     void Start()
     {
+        Advertisement.Initialize(gameId);
+
 
         if (!File.Exists(Application.persistentDataPath + "/sahnecim.puantik"))
         {
@@ -49,8 +60,13 @@ public class SahneDuzeni : MonoBehaviour
             kacoldu = 0;
             nihaisender += puan;
             SaveData();
-            nihaui.text = nihaisender.ToString();
             puan = 0;
+            adcounter += 1;
+            if (adcounter == 2)
+            {
+                PlayAd();
+                adcounter = 0;
+            }
         }
         if (SceneManager.GetActiveScene().name == "deney")
         {
@@ -67,7 +83,6 @@ public class SahneDuzeni : MonoBehaviour
         Debug.Log(kacoldu);
         Debug.Log(puan);
         Debug.Log(nihaisender);
-        LanguageIdentifier();
 
     }
     void Update()
@@ -145,17 +160,6 @@ public class SahneDuzeni : MonoBehaviour
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
         SaveData();
     }
-    public void LanguageIdentifier()
-    {
-        if (dil == 0)
-        {
-            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
-        }
-        if (dil == 1)
-        {
-            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
-        }
-    }
 
     public void SaveData()
     {
@@ -166,6 +170,14 @@ public class SahneDuzeni : MonoBehaviour
         SaveSystem data = SaveKeep.loadsave();
         nihaisender = data.tumpuan;
         dil = data.diling;
+    }
+
+    public void PlayAd()
+    {
+        if (Advertisement.IsReady("First"))
+        {
+            Advertisement.Show("First");
+        }
     }
 
 }
