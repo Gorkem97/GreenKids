@@ -34,7 +34,7 @@ public class SahneDuzeni : MonoBehaviour
 
 
     public static bool yardirsinmi;
-    public static int adcounter = 0;
+    public static int adcounter = -1;
     public static int kacoldu;
    // public static int nihaipuan = 0;
     public static int puan = 0;
@@ -62,7 +62,7 @@ public class SahneDuzeni : MonoBehaviour
             SaveData();
             puan = 0;
             adcounter += 1;
-            if (adcounter == 2)
+            if (adcounter == 4)
             {
                 PlayAd();
                 adcounter = 0;
@@ -150,7 +150,7 @@ public class SahneDuzeni : MonoBehaviour
 
     public void English()
     {
-        dil = 0;
+        dil = 0; 
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
         SaveData();
     }
