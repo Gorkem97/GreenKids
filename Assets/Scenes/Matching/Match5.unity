@@ -1053,7 +1053,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.3
+  m_fontSize: 40.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2332,12 +2332,12 @@ MonoBehaviour:
   - {fileID: 4822550916561188067, guid: 602af13e20e8e72489d37fb83e1dc0d6, type: 3}
   - {fileID: 7562468751678267723, guid: b10b870ede4ab89409af75e1f159d966, type: 3}
   yuvalar:
-  - {fileID: 5744727000600278316, guid: b89d72e80ef36254882027486f4d90e4, type: 3}
-  - {fileID: 8347162865097412508, guid: 2c03e48f207844147a815f5e64cc6754, type: 3}
-  - {fileID: 9049181421731647263, guid: 05e01d9a23619f948bc08eb429190a06, type: 3}
-  - {fileID: 440746219038918000, guid: 10487228b931d294c939c60583b16ebc, type: 3}
-  - {fileID: 8203321040419643810, guid: 8460665222b850c438db9315daead913, type: 3}
-  - {fileID: 4243036287529605005, guid: 9d5750bf2a5aa744bb565c72c1512eea, type: 3}
+  - {fileID: 8384242337664510551, guid: cd6229e184330a24c961f2cbac88b012, type: 3}
+  - {fileID: 4432446969084918051, guid: 9fd374cc3eea4234fa564f12541024ae, type: 3}
+  - {fileID: 6836521693156940512, guid: d88722cf58f8ad440962b7e9e3e2126a, type: 3}
+  - {fileID: 5432477197592362106, guid: 86387b5da6259ff479c04c1bf5b3a0fb, type: 3}
+  - {fileID: 4822550916561188067, guid: 7d76a5323e4673c4eaa18fb6763972ab, type: 3}
+  - {fileID: 7562468751678267723, guid: 3d711755e35a8bd4bbea6e6b6696b83f, type: 3}
   budamaRot:
   - {x: 0, y: 0, z: 0, w: 0}
   - {x: 0, y: 0, z: 0, w: 0}

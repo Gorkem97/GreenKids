@@ -33,7 +33,7 @@ public class LevelManager : MonoBehaviour
         Seviyeahremain.text = (puantoplar.nihaisender - puanbefore).ToString() + "/" + (puanmanager - puanbefore).ToString();
         if (puantoplar.nihaisender == 31 || seviye ==31)
         {
-            Seviyeahremain.text = (puantoplar.nihaisender - puanbefore).ToString() + "/" + (puanmanager - puanbefore).ToString() + ";)";
+            Seviyeahremain.text = (puantoplar.nihaisender - puanbefore).ToString() + "//" + (puanmanager - puanbefore).ToString();
         }
 
     }

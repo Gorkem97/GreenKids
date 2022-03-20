@@ -18,7 +18,7 @@ public class QRCodeRead : MonoBehaviour
     private RectTransform _scanZone;
 
     public GameObject Button;
-
+    public GameObject LELELEY;
 
     private bool isCamAvailable = false;
     private WebCamTexture _cameraTexture;
@@ -26,6 +26,7 @@ public class QRCodeRead : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        LELELEY.SetActive(false);
         Button.SetActive(false);
         SetUpCamera();
     }
@@ -180,6 +181,12 @@ public class QRCodeRead : MonoBehaviour
         {
             Application.OpenURL("https://www.youtube.com/watch?v=7OvW8Z7kiws");
         }
+        if (_textOut.text == "Witcher3"|| _textOut.text == "Witcher 3" || _textOut.text == "witcher3" || _textOut.text == "witcher 3" || _textOut.text == "Viçýr3")
+        {
+            LELELEY.SetActive(true);
+            Application.OpenURL("https://www.youtube.com/watch?v=FiYQMlCBKKc&ab_channel=EnisKirazoglu");
+        }
+
         else
         {
             Application.OpenURL(_textOut.text);

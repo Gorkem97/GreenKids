@@ -9081,10 +9081,10 @@ RectTransform:
   m_Father: {fileID: 789934350}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.14267364, y: 0.05837892}
-  m_AnchorMax: {x: 0.8244422, y: 0.9124316}
-  m_AnchoredPosition: {x: -0.0000076293945, y: 0.5}
-  m_SizeDelta: {x: -0.000022888, y: 1.05}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 7.5, y: 9.1}
+  m_SizeDelta: {x: 191.28, y: 34.300003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1761326961
 MonoBehaviour:
@@ -9099,14 +9099,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9875115, g: 1, b: 0.6462264, a: 1}
+  m_Color: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 33a3ad1ada27e1d4091690fc693ed1b7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0f824ffcdd75bf248abe16299f0de989, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10984,7 +10984,7 @@ ParticleSystemRenderer:
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
-  m_MaxParticleSize: 0.03
+  m_MaxParticleSize: 0.02
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -14791,7 +14791,7 @@ ParticleSystem:
   LightsModule:
     enabled: 0
     ratio: 0
-    light: {fileID: 1149429387}
+    light: {fileID: 0}
     randomDistribution: 1
     color: 1
     range: 1
@@ -14852,7 +14852,7 @@ ParticleSystem:
     intensityCurve:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 154.7
       minScalar: 1
       maxCurve:
         serializedVersion: 2

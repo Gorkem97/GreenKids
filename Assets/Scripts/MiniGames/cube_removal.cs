@@ -19,7 +19,8 @@ public class cube_removal : MonoBehaviour
     private float cameraZdistance;
     public Transform su;
 
-    Vector3 scaleChange = new Vector3(1.5f, 1.5f, 0);
+    private Vector3 scaleChange = new Vector3(0.2f,0.2f,0);
+
     bool isbig = false;
     // Start is called before the first frame update
     void Start()
