@@ -17,7 +17,7 @@ public class SahneDuzeni : MonoBehaviour
     string gameId = "4664846";
 #endif
 
-
+    bool barajkapa = false;
 
     public EslesmeManager EslesmeControl;
     public Text puanui;
@@ -32,11 +32,12 @@ public class SahneDuzeni : MonoBehaviour
     public bool eslesmemi = false;
     public bool coklumu = false;
 
+    private static bool dilsecildimi = false;
+
 
     public static bool yardirsinmi;
     public static int adcounter = -1;
     public static int kacoldu;
-   // public static int nihaipuan = 0;
     public static int puan = 0;
     void Start()
     {
@@ -58,11 +59,12 @@ public class SahneDuzeni : MonoBehaviour
             LoadData();
             yardirsinmi = false;
             kacoldu = 0;
+            SelectLanguage();
             nihaisender += puan;
             SaveData();
             puan = 0;
             adcounter += 1;
-            if (adcounter == 4)
+            if (adcounter == 3)
             {
                 PlayAd();
                 adcounter = 0;
@@ -87,6 +89,7 @@ public class SahneDuzeni : MonoBehaviour
     }
     void Update()
     {
+        
         yardirsender = yardirsinmi;
         kacoldusender = kacoldu;
         if (SceneManager.GetActiveScene().name != "Main")
@@ -95,9 +98,17 @@ public class SahneDuzeni : MonoBehaviour
         }
         if (yardirsinmi == true)
         {
-            barajhesapla();
+            if (barajkapa == false)
+            {
+                barajhesapla();
+            }
             barajui.text = barajpuan.ToString();
             ikincipuanui.text = puan.ToString();
+        }
+        if (dilsecildimi == false)
+        {
+            SelectLanguage();
+            dilsecildimi = true;
         }
 
     }
@@ -142,6 +153,7 @@ public class SahneDuzeni : MonoBehaviour
     {
         puan = barajpuan;
         kacoldu = 0;
+        barajkapa = true;
     }
     public void don()
     {
@@ -159,6 +171,17 @@ public class SahneDuzeni : MonoBehaviour
         dil = 1;
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
         SaveData();
+    }
+    void SelectLanguage()
+    {
+        if (dil== 0)
+        {
+            English();
+        }
+        if (dil == 1)
+        {
+            Turkish();
+        }
     }
 
     public void SaveData()

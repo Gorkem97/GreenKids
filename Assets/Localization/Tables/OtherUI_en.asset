@@ -70,5 +70,10 @@ MonoBehaviour:
     m_Localized: QR Scanner
     m_Metadata:
       m_Items: []
+  - m_Id: 2532210745417728
+    m_Localized: Get Our Card Game For Special Content!
+    m_Metadata:
+      m_Items: []
   references:
-    version: 1
+    version: 2
+    RefIds: []

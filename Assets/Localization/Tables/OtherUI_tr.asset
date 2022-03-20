@@ -70,5 +70,10 @@ MonoBehaviour:
     m_Localized: "QR Taray\u0131c\u0131"
     m_Metadata:
       m_Items: []
+  - m_Id: 2532210745417728
+    m_Localized: "\xD6zel \u0130\xE7erikler \u0130\xE7in Kart Oyunumuzu Al\u0131n!"
+    m_Metadata:
+      m_Items: []
   references:
-    version: 1
+    version: 2
+    RefIds: []

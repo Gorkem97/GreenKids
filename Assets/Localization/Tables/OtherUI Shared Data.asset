@@ -67,13 +67,18 @@ MonoBehaviour:
     m_Key: "QR Taray\u0131c\u0131"
     m_Metadata:
       m_Items: []
+  - m_Id: 2532210745417728
+    m_Key: "\xD6zel \u0130\xE7erikler \u0130\xE7in Kart Oyunumuzu Al\u0131n!"
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    id: 0
+    rid: 0
   references:
-    version: 1
-    00000000:
+    version: 2
+    RefIds:
+    - rid: 0
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
         m_CustomEpoch: 1647200748757
