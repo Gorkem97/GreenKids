@@ -71,7 +71,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2532210745417728
-    m_Localized: "\xD6zel \u0130\xE7erikler \u0130\xE7in Kart Oyunumuzu Al\u0131n!"
+    m_Localized: "\xD6zel \u0130\xE7erikler \u0130\xE7in Kart Oyunumuza G\xF6z At\u0131n!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10845449547816960
+    m_Localized: "Bu i\xE7erik bir sonraki g\xFCncellemede eklenecek."
     m_Metadata:
       m_Items: []
   references:

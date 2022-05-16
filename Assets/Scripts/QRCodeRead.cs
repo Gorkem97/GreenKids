@@ -19,6 +19,8 @@ public class QRCodeRead : MonoBehaviour
 
     public GameObject Button;
     public GameObject LELELEY;
+    public GameObject disclaimer;
+    public int isworking = 0;
 
     private bool isCamAvailable = false;
     private WebCamTexture _cameraTexture;
@@ -26,9 +28,10 @@ public class QRCodeRead : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LELELEY.SetActive(false);
+        disclaimer.SetActive(false);
         Button.SetActive(false);
         SetUpCamera();
+        LELELEY.SetActive(false);
     }
 
     // Update is called once per frame
@@ -99,83 +102,84 @@ public class QRCodeRead : MonoBehaviour
     {
         if (_textOut.text == "video1")
         {
-             Application.OpenURL("");
+            disclaimer.SetActive(true);
+            isworking += 1;
         }
         if (_textOut.text == "video2")
         {
-            Application.OpenURL("");
+            Application.OpenURL("https://youtu.be/h1YHq2Mn64A");
         }
         if (_textOut.text == "video3")
         {
-            Application.OpenURL("");
+            disclaimer.SetActive(true);
         }
         if (_textOut.text == "video4")
         {
-            Application.OpenURL("");
+            Application.OpenURL("https://youtu.be/4S17MjHhuy8");
         }
         if (_textOut.text == "video5")
         {
-            Application.OpenURL("");
+            disclaimer.SetActive(true);
         }
         if (_textOut.text == "video6")
         {
-            Application.OpenURL("");
+            disclaimer.SetActive(true);
         }
         if (_textOut.text == "video7")
         {
-            Application.OpenURL("");
+            disclaimer.SetActive(true);
         }
         if (_textOut.text == "video8")
         {
-            Application.OpenURL("");
+            disclaimer.SetActive(true);
         }
         if (_textOut.text == "video9")
         {
-            Application.OpenURL("");
+            Application.OpenURL("https://youtu.be/y6DOqIR-JaI");
         }
         if (_textOut.text == "video10")
         {
-            Application.OpenURL("");
+            Application.OpenURL("https://youtu.be/uKAJ5pSz-P8");
         }
         if (_textOut.text == "video11")
         {
-            Application.OpenURL("");
+            disclaimer.SetActive(true);
         }
         if (_textOut.text == "video12")
         {
-            Application.OpenURL("");
+            Application.OpenURL("https://youtu.be/bVoi5v434qE");
         }
         if (_textOut.text == "video13")
         {
-            Application.OpenURL("");
+            disclaimer.SetActive(true);
         }
         if (_textOut.text == "video14")
         {
-            Application.OpenURL("");
+            disclaimer.SetActive(true);
         }
         if (_textOut.text == "video15")
         {
-            Application.OpenURL("");
+            Application.OpenURL("https://youtu.be/SlfrBu_pxDY");
         }
         if (_textOut.text == "video16")
         {
-            Application.OpenURL("");
+            Application.OpenURL("https://youtu.be/RpVrm03VqEo");
         }
         if (_textOut.text == "video17")
         {
-            Application.OpenURL("");
+            disclaimer.SetActive(true);
         }
         if (_textOut.text == "video18")
         {
-            Application.OpenURL("");
+            disclaimer.SetActive(true);
         }
         if (_textOut.text == "video19")
         {
-            Application.OpenURL("");
+            disclaimer.SetActive(true);
         }
         if (_textOut.text == "video20")
         {
-            Application.OpenURL("");
+            disclaimer.SetActive(true);
         }
         if (_textOut.text == "video21")
         {

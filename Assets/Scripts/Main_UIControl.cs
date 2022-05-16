@@ -12,6 +12,7 @@ public class Main_UIControl : MonoBehaviour
     public GameObject MainTab;
     public GameObject MiniTab;
     public GameObject HafizaHub;
+    public GameObject levelmenu;
     public GameObject Credits;
     public LevelManager seviyeler;
 
@@ -51,6 +52,7 @@ public class Main_UIControl : MonoBehaviour
         Credits.SetActive(false);
         MiniTab.SetActive(false);
         HafizaHub.SetActive(false);
+        levelmenu.SetActive(false);
     }
     public void Hafiza4(int kacli)
     {

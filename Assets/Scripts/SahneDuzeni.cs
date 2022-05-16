@@ -53,6 +53,7 @@ public class SahneDuzeni : MonoBehaviour
         if (SceneManager.GetActiveScene().name != "Main")
         {
             kacoldu += 1;
+            
         }
         if (SceneManager.GetActiveScene().name == "Main")
         {
@@ -64,7 +65,7 @@ public class SahneDuzeni : MonoBehaviour
             SaveData();
             puan = 0;
             adcounter += 1;
-            if (adcounter == 3)
+            if (adcounter >= 3)
             {
                 PlayAd();
                 adcounter = 0;
@@ -76,11 +77,20 @@ public class SahneDuzeni : MonoBehaviour
         }
         if (eslesmemi == true)
         {
-            puan = 10;
+            puan = 20;
         }
         if (coklumu == true)
         {
-            puan = 40;
+            puan = 50;
+        }
+        if (yardirsinmi == true)
+        {
+            adcounter += 1;
+            if (adcounter >= 4)
+            {
+                PlayAd();
+                adcounter = 0;
+            }
         }
         Debug.Log(kacoldu);
         Debug.Log(puan);

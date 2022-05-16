@@ -71,6 +71,10 @@ MonoBehaviour:
     m_Key: "\xD6zel \u0130\xE7erikler \u0130\xE7in Kart Oyunumuzu Al\u0131n!"
     m_Metadata:
       m_Items: []
+  - m_Id: 10845449547816960
+    m_Key: "Bu i\xE7erik hen\xFCz mevcut de\u011Fil"
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

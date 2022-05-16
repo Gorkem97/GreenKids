@@ -71,7 +71,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2532210745417728
-    m_Localized: Get Our Card Game For Special Content!
+    m_Localized: Check Out Our Card Game For Special Content!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10845449547816960
+    m_Localized: This Content will be added in the next patch.
     m_Metadata:
       m_Items: []
   references:
